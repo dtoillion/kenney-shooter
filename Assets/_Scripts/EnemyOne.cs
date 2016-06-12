@@ -8,7 +8,7 @@ public class EnemyOne : MonoBehaviour {
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddForce(transform.up * (Random.Range(-100,-400)));
+		rb.AddForce(transform.up * (Random.Range(-100,-300)));
 	}
 	
 	void OnTriggerEnter2D(Collider2D trig) {
@@ -16,7 +16,8 @@ public class EnemyOne : MonoBehaviour {
         {
 			GameControl.control.score++;
 			Instantiate(ExplosionPrefab, transform.position, transform.rotation);
-			Destroy(gameObject, 0.5f);
+			ExplosionPrefab.transform.parent = null;
+			Destroy(gameObject, 0.1f);
       }
     }
 }
