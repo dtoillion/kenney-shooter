@@ -16,7 +16,7 @@ public class MedMeteor : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D trig) {
         if (trig.gameObject.tag == "Projectile")
         {
-			//Destroy(trig.gameObject, 0);
+			Destroy(trig.gameObject, 0);
 			GameControl.control.score+=5;
         	originPosition = transform.position;
         	for (int i = 0; i < 5; i++)

@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour {
         	Application.Quit();
         }
         else if(Input.anyKeyDown) {
-            SceneManager.LoadScene("Level001");
+        	SceneManager.LoadScene("Level001");
         }
     }
 }
