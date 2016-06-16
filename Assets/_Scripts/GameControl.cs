@@ -12,7 +12,9 @@ public class GameControl : MonoBehaviour
 
 	public float score = 0f;
 	public float health= 100f;
-	public float fireRate = 1f;
+	public float fireRateGreen = 1f;
+	public float fireRateRed = 3f;
+	public float fireRateBlue = 2f;
 	public float Speed = 1f;
 	public Text scoreHUD;
 	public Text healthHUD;

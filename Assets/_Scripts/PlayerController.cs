@@ -3,10 +3,8 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour 
 {
-	public GameObject LaserPrefab;
 	public GameObject ExplosionPrefab;
 	public GameObject ImpactPrefab;
-	private float nextFire = 0.0f;
 	private float YInputValue;
 	private float XInputValue;
 	private Rigidbody2D rb;
@@ -34,16 +32,7 @@ public class PlayerController : MonoBehaviour
 	private void FixedUpdate ()
 	{
 		if(((XInputValue != 0) || (YInputValue != 0)) && !(crash))
-			TurnShip ();
-		
-		if(Input.GetButton("Fire1"))
 			MoveShip ();
-		
-		if(Input.GetButton("Fire2") && Time.time > nextFire)
-		{
-			nextFire = Time.time + GameControl.control.fireRate;
-			Instantiate(LaserPrefab, transform.position, transform.rotation);
-		}
 	}
 	
 	void OnTriggerEnter2D(Collider2D trig) {
@@ -60,9 +49,8 @@ public class PlayerController : MonoBehaviour
 		if ((collision.gameObject.tag == "Target") && !(crash))
 		{
 			crash = true;
-			rb.AddTorque(10);
-			Invoke("Crashed", 2);
-			GameControl.control.health-=10f;
+			Invoke("Crashed", 0.5f);
+			GameControl.control.health -= 10f;
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
 		}
 	}
@@ -74,12 +62,7 @@ public class PlayerController : MonoBehaviour
 
 	private void MoveShip ()
 	{
-		rb.AddForce(transform.up * GameControl.control.Speed);
-	}
-
-	private void TurnShip ()
-	{
-		var angle = Mathf.Atan2(XInputValue, YInputValue) * Mathf.Rad2Deg - 180;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+		rb.AddForce(transform.right * XInputValue * GameControl.control.Speed);
+		rb.AddForce(transform.up * YInputValue * GameControl.control.Speed);
 	}
 }
