@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponSystem : MonoBehaviour {
+public class WeaponSystemTurret : MonoBehaviour {
 
 	public GameObject LaserPrefabGreen;
 	public GameObject LaserPrefabRed;

@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
 		if ((collision.gameObject.tag == "Target") && !(crash))
 		{
 			crash = true;
-			Invoke("Crashed", 0.5f);
+			Invoke("Crashed", 0.7f);
 			GameControl.control.health -= 10f;
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
 		}
@@ -62,8 +62,8 @@ public class PlayerController : MonoBehaviour {
 
 	private void MoveShip ()
 	{
-		rb.AddForce(transform.right * XInputValue * GameControl.control.Speed);
-		rb.AddForce(transform.up * YInputValue * GameControl.control.Speed);
+		rb.AddForce(transform.right * YInputValue * GameControl.control.Speed);
+		rb.AddForce(transform.up * XInputValue * GameControl.control.Speed);
 	}
 
 }
