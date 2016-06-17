@@ -6,9 +6,6 @@ public class WeaponSystemTurret : MonoBehaviour {
 	public GameObject LaserPrefabGreen;
 	public GameObject LaserPrefabRed;
 	public GameObject LaserPrefabBlue;
-	public GameObject GreenUI;
-	public GameObject RedUI;
-	public GameObject BlueUI;
 
 	private GameObject CurrentWeapon;
 	private float CurrentFireRate;
@@ -40,49 +37,24 @@ public class WeaponSystemTurret : MonoBehaviour {
 		{
 			CurrentWeapon = LaserPrefabGreen;
 			CurrentFireRate = GameControl.control.fireRateGreen;
-			ActivateWeaponUI();
 		}
 
 		if(Input.GetButton("Fire2"))
 		{
 			CurrentWeapon = LaserPrefabRed;
 			CurrentFireRate = GameControl.control.fireRateRed;
-			ActivateWeaponUI();
 		}
 
 		if(Input.GetButton("Fire3"))
 		{
 			CurrentWeapon = LaserPrefabBlue;
 			CurrentFireRate = GameControl.control.fireRateBlue;
-			ActivateWeaponUI();
 		}
 
 		if(Input.GetButton("Fire4") && Time.time > nextFire)
 		{
 			nextFire = Time.time + CurrentFireRate;
 			Instantiate(CurrentWeapon, transform.position, transform.rotation);
-		}
-	}
-
-	private void ActivateWeaponUI ()
-	{
-		if (CurrentWeapon == LaserPrefabGreen)
-		{
-			GreenUI.SetActive(true);
-			RedUI.SetActive(false);
-			BlueUI.SetActive(false);
-		}
-		if (CurrentWeapon == LaserPrefabRed)
-		{
-			GreenUI.SetActive(false);
-			RedUI.SetActive(true);
-			BlueUI.SetActive(false);
-		}
-		if (CurrentWeapon == LaserPrefabBlue)
-		{
-			GreenUI.SetActive(false);
-			RedUI.SetActive(false);
-			BlueUI.SetActive(true);
 		}
 	}
 

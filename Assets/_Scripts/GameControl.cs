@@ -4,6 +4,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour {
 
@@ -17,19 +18,17 @@ public class GameControl : MonoBehaviour {
 	public Text scoreHUD;
 	public Text healthHUD;
 	public GameObject GameOverCanvas;
+	public GameObject PlayerShip;
 
 	void Update ()
 	{
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
-		if(health <= 0)
-		{
-			Invoke("GameOver", 1);
-		}
 	}
 
 	void Awake ()
 	{
+		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 		if (control == null) {
 			DontDestroyOnLoad (gameObject);
 			control = this;
@@ -45,6 +44,15 @@ public class GameControl : MonoBehaviour {
 	{
 		GameOverCanvas.SetActive(true);
 		Time.timeScale = 0;
+	}
+
+	public void ResetGame ()
+	{
+		GameControl.control.score = 0f;
+		GameControl.control.health = 30f;
+		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
+		GameOverCanvas.SetActive(false);
+		Time.timeScale = 1;
 	}
 
 	public void Save ()

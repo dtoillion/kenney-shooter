@@ -11,7 +11,7 @@ public class GameOverMenu : MonoBehaviour {
 
   public void Retry ()
   {
-    SceneManager.LoadScene("Level001");
+    GameControl.control.ResetGame();
   }
 
 }
