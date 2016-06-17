@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponSystem : MonoBehaviour
-{
+public class WeaponSystem : MonoBehaviour {
+
 	public GameObject LaserPrefabGreen;
 	public GameObject LaserPrefabRed;
 	public GameObject LaserPrefabBlue;
-
 	public GameObject GreenUI;
 	public GameObject RedUI;
 	public GameObject BlueUI;
@@ -23,6 +22,7 @@ public class WeaponSystem : MonoBehaviour
 		CurrentFireRate = GameControl.control.fireRateBlue;
 		nextFire = CurrentFireRate;
 	}
+
 	private void Update ()
 	{
 		RightYInputValue = Input.GetAxis("RVertical");
@@ -42,7 +42,7 @@ public class WeaponSystem : MonoBehaviour
 			CurrentFireRate = GameControl.control.fireRateGreen;
 			ActivateWeaponUI();
 		}
-		
+
 		if(Input.GetButton("Fire2"))
 		{
 			CurrentWeapon = LaserPrefabRed;
@@ -60,9 +60,8 @@ public class WeaponSystem : MonoBehaviour
 		if(Input.GetButton("Fire4") && Time.time > nextFire)
 		{
 			nextFire = Time.time + CurrentFireRate;
-			Instantiate(CurrentWeapon, transform.position, transform.rotation);	
+			Instantiate(CurrentWeapon, transform.position, transform.rotation);
 		}
-	
 	}
 
 	private void ActivateWeaponUI ()

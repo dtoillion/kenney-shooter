@@ -5,11 +5,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.UI;
 
-public class GameControl : MonoBehaviour
-{
-	
-	public static GameControl control;
+public class GameControl : MonoBehaviour {
 
+	public static GameControl control;
 	public float score = 0f;
 	public float health= 100f;
 	public float fireRateGreen = 1f;
@@ -20,7 +18,7 @@ public class GameControl : MonoBehaviour
 	public Text healthHUD;
 	public GameObject GameOverCanvas;
 
-	void Update () 
+	void Update ()
 	{
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
@@ -49,11 +47,6 @@ public class GameControl : MonoBehaviour
 		Time.timeScale = 0;
 	}
 
-	public void GameWin ()
-	{
-		Debug.Log("WIN");
-	}
-
 	public void Save ()
 	{
 		BinaryFormatter bf = new BinaryFormatter ();
@@ -64,7 +57,7 @@ public class GameControl : MonoBehaviour
 		bf.Serialize (file, data);
 		file.Close ();
 	}
-	
+
 	public void Load ()
 	{
 		if (File.Exists (Application.persistentDataPath + "/playerInfo.dat")) {
@@ -72,7 +65,7 @@ public class GameControl : MonoBehaviour
 			FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
 			PlayerData data = (PlayerData)bf.Deserialize (file);
 			file.Close ();
-			
+
 			score = data.score;
 			health = data.health;
 		}

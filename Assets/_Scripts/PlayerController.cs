@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour 
-{
+public class PlayerController : MonoBehaviour {
+
 	public GameObject ExplosionPrefab;
 	public GameObject ImpactPrefab;
 	private float YInputValue;
@@ -28,22 +28,22 @@ public class PlayerController : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-	
+
 	private void FixedUpdate ()
 	{
 		if(((XInputValue != 0) || (YInputValue != 0)) && !(crash))
 			MoveShip ();
 	}
-	
+
 	void OnTriggerEnter2D(Collider2D trig) {
-        if (trig.gameObject.tag == "EnemyLaser")
-        {
-        	Destroy(trig.gameObject, 0);
-        	GameControl.control.health-=10f;
+    if (trig.gameObject.tag == "EnemyLaser")
+    {
+     	Destroy(trig.gameObject, 0);
+     	GameControl.control.health-=10f;
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
-        }
     }
-	
+  }
+
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 		if ((collision.gameObject.tag == "Target") && !(crash))
@@ -65,4 +65,5 @@ public class PlayerController : MonoBehaviour
 		rb.AddForce(transform.right * XInputValue * GameControl.control.Speed);
 		rb.AddForce(transform.up * YInputValue * GameControl.control.Speed);
 	}
+
 }

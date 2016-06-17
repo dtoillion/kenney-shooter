@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LaserBeam : MonoBehaviour
-{
+public class LaserBeam : MonoBehaviour {
+
 	public float Speed = 2f;
 	public float Lifetime = 2f;
 	private Rigidbody2D rb;

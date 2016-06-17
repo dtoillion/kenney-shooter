@@ -5,6 +5,7 @@ public class DestroyOnTouch : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D trig)
 	{
-        Destroy(trig.gameObject, 0);
-    }
+    Destroy(trig.gameObject, 0);
+  }
+
 }

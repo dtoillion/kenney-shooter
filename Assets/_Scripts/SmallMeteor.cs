@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class SmallMeteor : MonoBehaviour {
-	
+
 	private Rigidbody2D rb;
 
 	private void Awake ()
@@ -13,11 +13,11 @@ public class SmallMeteor : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D trig)
 	{
-        if (trig.gameObject.tag == "Projectile")
-        {
-			//Destroy(trig.gameObject, 0);
+    if (trig.gameObject.tag == "Projectile")
+    {
 			GameControl.control.score+=10f;
 			Destroy(gameObject, 0);
-    	}
-    }
+   	}
+  }
+
 }

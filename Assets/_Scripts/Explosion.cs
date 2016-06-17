@@ -5,7 +5,9 @@ public class Explosion : MonoBehaviour {
 
 	public float Lifetime = 3f;
 
-	void Start () {
+	void Start ()
+  {
 		Destroy(gameObject, Lifetime);
 	}
+
 }

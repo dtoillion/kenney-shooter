@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LevelBuilder : MonoBehaviour {
-	
+
 	public GameObject[] asteroids;
 	public float spawnRate = 3f;
 	public float minX = 0f;
@@ -12,7 +12,7 @@ public class LevelBuilder : MonoBehaviour {
 	public float minZ = 0f;
 	public float maxZ = 0f;
 	private Vector3 originPosition;
-	
+
 	void Start ()
 	{
 		originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
@@ -27,4 +27,5 @@ public class LevelBuilder : MonoBehaviour {
 			originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
 		}
 	}
+
 }

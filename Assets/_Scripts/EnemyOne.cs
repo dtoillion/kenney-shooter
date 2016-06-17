@@ -15,20 +15,21 @@ public class EnemyOne : MonoBehaviour {
 		if (shoots)
 			InvokeRepeating("PewPewPew", 1, (Random.Range(2, 9)));
 	}
-	
+
 	void PewPewPew ()
 	{
 		Instantiate(LaserPrefab, transform.position, transform.rotation);
 	}
 
 	void OnTriggerEnter2D(Collider2D trig) {
-        if (trig.gameObject.tag == "Projectile")
-        {
-        	Destroy(trig.gameObject, 0);
+    if (trig.gameObject.tag == "Projectile")
+    {
+    	Destroy(trig.gameObject, 0);
 			GameControl.control.score += 5;
 			Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 			ExplosionPrefab.transform.parent = null;
 			Destroy(gameObject, 0.1f);
-      }
     }
+  }
+
 }

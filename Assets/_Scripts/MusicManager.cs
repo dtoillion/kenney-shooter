@@ -3,16 +3,17 @@ using System.Collections;
 
 public class MusicManager : MonoBehaviour {
 
-	// Music Player
 	public AudioClip[] musicbg;
 	AudioSource backgroundMusic;
 	private int i;
-	
-	void Awake () {
+
+	void Awake ()
+	{
 		backgroundMusic = GetComponent <AudioSource> ();
 	}
 
-	void Start () {
+	void Start ()
+	{
 		i = UnityEngine.Random.Range(0,musicbg.Length);
 		StartCoroutine("Playlist");
 	}
@@ -24,14 +25,11 @@ public class MusicManager : MonoBehaviour {
 			yield return new WaitForSeconds(1.0f);
 			if(!backgroundMusic.isPlaying)
 			{
-				if(i != (musicbg.Length -1))
-				{
+				if(i != (musicbg.Length -1)) {
 					i++;
 					backgroundMusic.clip = musicbg[i];
 					backgroundMusic.Play();
-				}
-				else
-				{
+				}	else {
 					i=0;
 					backgroundMusic.clip= musicbg[i];
 					backgroundMusic.Play();
@@ -39,4 +37,5 @@ public class MusicManager : MonoBehaviour {
 			}
 		}
 	}
+
 }
