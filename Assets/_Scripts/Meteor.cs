@@ -10,16 +10,17 @@ public class Meteor : MonoBehaviour {
 	private void Awake ()
 	{
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddTorque(Random.Range(-10,10));
-		rb.AddForce(transform.up * (Random.Range(-100,-400)));
+		rb.AddTorque(Random.Range(-15,15));
+		rb.AddForce(transform.right * (Random.Range(-100,-450)));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)
   {
-    if (trig.gameObject.tag == "Projectile")
+    if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
     {
 			Destroy(trig.gameObject, 0);
-			GameControl.control.score++;
+			if(trig.gameObject.tag == "Projectile")
+        GameControl.control.score += 10;
      	originPosition = transform.position;
      	for (int i = 0; i < 5; i++)
      	{

@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour {
 	public float fireRateRed = 3f;
 	public float fireRateBlue = 2f;
 	public float Speed = 1f;
+	public bool SpawnPlayer = true;
 	public Text scoreHUD;
 	public Text healthHUD;
 	public GameObject GameOverCanvas;
@@ -28,7 +29,8 @@ public class GameControl : MonoBehaviour {
 
 	void Awake ()
 	{
-		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
+		if(SpawnPlayer)
+			Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 		if (control == null) {
 			DontDestroyOnLoad (gameObject);
 			control = this;

@@ -16,10 +16,11 @@ public class MedMeteor : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D trig)
   {
 
-    if (trig.gameObject.tag == "Projectile")
+    if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
     {
 			Destroy(trig.gameObject, 0);
-			GameControl.control.score+=5;
+      if (trig.gameObject.tag == "Projectile")
+			  GameControl.control.score += 25;
      	originPosition = transform.position;
      	for (int i = 0; i < 5; i++)
      	{

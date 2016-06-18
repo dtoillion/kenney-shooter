@@ -8,12 +8,6 @@ public class Explosion : MonoBehaviour {
 	void Start ()
   {
 		Destroy(gameObject, Lifetime);
-    Invoke("Death", 1f);
 	}
-
-  private void Death()
-  {
-    GameControl.control.GameOver();
-  }
 
 }

@@ -13,9 +13,11 @@ public class SmallMeteor : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D trig)
 	{
-    if (trig.gameObject.tag == "Projectile")
+    if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
     {
-			GameControl.control.score+=10f;
+      Destroy(trig.gameObject, 0);
+      if (trig.gameObject.tag == "Projectile")
+			  GameControl.control.score += 50f;
 			Destroy(gameObject, 0);
    	}
   }
