@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LevelBuilder : MonoBehaviour {
+public class Asteroids : MonoBehaviour {
 
 	public GameObject[] asteroids;
 	public float spawnRate = 3f;

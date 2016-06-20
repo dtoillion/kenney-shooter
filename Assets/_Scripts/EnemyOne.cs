@@ -5,7 +5,9 @@ public class EnemyOne : MonoBehaviour {
 
 	public GameObject ExplosionPrefab;
 	public GameObject ImpactPrefab;
-	public GameObject LaserPrefab;
+	private GameObject LaserPrefab;
+	public GameObject[] LaserPrefabs;
+	public GameObject[] Pickups;
 	public float health = 30f;
 	public bool shoots = false;
 	public bool evasive = false;
@@ -32,6 +34,7 @@ public class EnemyOne : MonoBehaviour {
 
 	void SetupEnemy ()
 	{
+		LaserPrefab = LaserPrefabs[Random.Range(0, LaserPrefabs.Length)];
     sf = (Random.Range(1f, 10f));
 		ef = (Random.Range(1f, 10f));
 		ssf = (Random.Range(1f, 10f));
@@ -73,6 +76,10 @@ public class EnemyOne : MonoBehaviour {
 				GameControl.control.score += 100;
 				Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 				ExplosionPrefab.transform.parent = null;
+				for (int i = 0; i < 1; i++)
+				{
+					Instantiate(Pickups[Random.Range(0, Pickups.Length)], transform.position, Quaternion.identity);
+				}
 				Destroy(gameObject, 0.1f);
     	}
     }

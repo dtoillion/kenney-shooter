@@ -8,9 +8,9 @@ public class PlayerProgression : MonoBehaviour {
 
 	void Update ()
   {
-    if(GameControl.control.score >= 500)
+    if(GameControl.control.score >= 5000)
       UpgradeOne.SetActive(true);
-    if(GameControl.control.score >= 1000)
+    if(GameControl.control.score >= 10000)
       UpgradeTwo.SetActive(true);
 	}
 

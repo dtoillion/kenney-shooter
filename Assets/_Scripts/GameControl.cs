@@ -52,6 +52,10 @@ public class GameControl : MonoBehaviour {
 	{
 		GameControl.control.score = 0f;
 		GameControl.control.health = 30f;
+		GameControl.control.fireRateGreen = 0.7f;
+		GameControl.control.fireRateRed = 0.5f;
+		GameControl.control.fireRateBlue = 0.3f;
+		GameControl.control.Speed = 5f;
 		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 		GameOverCanvas.SetActive(false);
 		Time.timeScale = 1;
