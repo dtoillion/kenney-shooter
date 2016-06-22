@@ -10,8 +10,7 @@ public class Meteor : MonoBehaviour {
 	private void Awake ()
 	{
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddTorque(Random.Range(-15,15));
-		rb.AddForce(transform.right * (Random.Range(-100,-450)));
+		rb.AddTorque(Random.Range(-100,100));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)

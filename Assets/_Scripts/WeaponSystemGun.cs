@@ -3,17 +3,21 @@ using System.Collections;
 
 public class WeaponSystemGun : MonoBehaviour {
 
+  public GameObject LaserPrefabGreen;
   public GameObject LaserPrefabRed;
+  public GameObject LaserPrefabBlue;
 
-  private GameObject CurrentWeapon;
+  private GameObject CurrentWeaponPrefab;
+  private int CurrentWeapon;
+  private float nextFire;
   private float CurrentFireRate;
-  private float nextFire = 0.0f;
 
   private void Start ()
   {
-    CurrentWeapon = LaserPrefabRed;
-    CurrentFireRate = GameControl.control.fireRateRed;
     nextFire = CurrentFireRate;
+    CurrentWeapon = GameControl.control.CurrentWeapon;
+    CurrentWeaponPrefab = LaserPrefabBlue;
+    CurrentFireRate = GameControl.control.CurrentFireRate;
   }
 
   private void FixedUpdate ()
@@ -21,8 +25,16 @@ public class WeaponSystemGun : MonoBehaviour {
     if(Input.GetButton("Fire4") && Time.time > nextFire)
     {
       nextFire = Time.time + CurrentFireRate;
-      Instantiate(CurrentWeapon, transform.position, transform.rotation);
+      Instantiate(CurrentWeaponPrefab, transform.position, transform.rotation);
     }
+    CurrentWeapon = GameControl.control.CurrentWeapon;
+    CurrentFireRate = GameControl.control.CurrentFireRate;
+    if(CurrentWeapon == 1)
+      CurrentWeaponPrefab = LaserPrefabGreen;
+    if(CurrentWeapon == 2)
+      CurrentWeaponPrefab = LaserPrefabRed;
+    if(CurrentWeapon == 3)
+      CurrentWeaponPrefab = LaserPrefabBlue;
   }
 
 }

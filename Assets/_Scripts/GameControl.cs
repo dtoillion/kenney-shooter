@@ -11,35 +11,32 @@ public class GameControl : MonoBehaviour {
 	public static GameControl control;
 	public float score = 0f;
 	public float health= 100f;
-	public float fireRateGreen = 1f;
-	public float fireRateRed = 3f;
-	public float fireRateBlue = 2f;
-	public float Speed = 1f;
+	public float Speed = 60f;
+	public float CurrentFireRate = 0.5f;
 	public bool SpawnPlayer = true;
 	public Text scoreHUD;
 	public Text healthHUD;
+	public Text notification;
 	public GameObject GameOverCanvas;
 	public GameObject PlayerShip;
+	public int CurrentWeapon = 1;
+	public float CurrentLevel = 1;
 
 	void Update ()
 	{
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
+		notification.text = ("Level " + CurrentLevel);
 	}
 
 	void Awake ()
 	{
+		control = this;
 		if(SpawnPlayer)
 			Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
-		if (control == null) {
-			DontDestroyOnLoad (gameObject);
-			control = this;
-		} else if (control != this) {
-			Destroy (gameObject);
-		}
-
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
+		notification.text = ("Level " + CurrentLevel);
 	}
 
 	public void GameOver ()
@@ -50,46 +47,8 @@ public class GameControl : MonoBehaviour {
 
 	public void ResetGame ()
 	{
-		GameControl.control.score = 0f;
-		GameControl.control.health = 30f;
-		GameControl.control.fireRateGreen = 0.7f;
-		GameControl.control.fireRateRed = 0.5f;
-		GameControl.control.fireRateBlue = 0.3f;
-		GameControl.control.Speed = 5f;
-		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
-		GameOverCanvas.SetActive(false);
 		Time.timeScale = 1;
+		SceneManager.LoadScene("Level001");
 	}
 
-	public void Save ()
-	{
-		BinaryFormatter bf = new BinaryFormatter ();
-		FileStream file = File.Create (Application.persistentDataPath + "/playerInfo.dat");
-		PlayerData data = new PlayerData ();
-		data.score = score;
-		data.health = health;
-		bf.Serialize (file, data);
-		file.Close ();
-	}
-
-	public void Load ()
-	{
-		if (File.Exists (Application.persistentDataPath + "/playerInfo.dat")) {
-			BinaryFormatter bf = new BinaryFormatter ();
-			FileStream file = File.Open (Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
-			PlayerData data = (PlayerData)bf.Deserialize (file);
-			file.Close ();
-
-			score = data.score;
-			health = data.health;
-		}
-	}
-
-}
-
-[Serializable]
-class PlayerData
-{
-	public float score;
-	public float health;
 }

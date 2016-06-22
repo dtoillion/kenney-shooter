@@ -10,7 +10,7 @@ public class MedMeteor : MonoBehaviour {
 	private void Awake ()
 	{
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddTorque(Random.Range(-10,10));
+		rb.AddTorque(Random.Range(-100,100));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)

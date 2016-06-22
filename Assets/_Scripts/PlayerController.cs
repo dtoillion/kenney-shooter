@@ -39,9 +39,30 @@ public class PlayerController : MonoBehaviour {
     if (trig.gameObject.tag == "EnemyLaser")
     {
      	Destroy(trig.gameObject, 0);
-     	GameControl.control.health-=10f;
+     	GameControl.control.health-=1f;
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
+
+    if (trig.gameObject.tag == "PickUpGreen")
+    {
+    	GameControl.control.CurrentWeapon = 1;
+    }
+
+    if (trig.gameObject.tag == "PickUpRed")
+    {
+    	GameControl.control.CurrentWeapon = 2;
+    }
+
+    if (trig.gameObject.tag == "PickUpBlue")
+    {
+    	GameControl.control.CurrentWeapon = 3;
+    }
+
+    if (trig.gameObject.tag == "PickUpYellow")
+    {
+    	GameControl.control.health += 1;
+    }
+
   }
 
 	void OnCollisionEnter2D(Collision2D collision)
@@ -50,7 +71,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			crash = true;
 			Invoke("Crashed", 0.7f);
-			GameControl.control.health -= 10f;
+			GameControl.control.health -= 1f;
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
 		}
 	}

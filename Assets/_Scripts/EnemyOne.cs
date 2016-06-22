@@ -8,7 +8,7 @@ public class EnemyOne : MonoBehaviour {
 	private GameObject LaserPrefab;
 	public GameObject[] LaserPrefabs;
 	public GameObject[] Pickups;
-	public float health = 30f;
+	public float health = 3f;
 	public bool shoots = false;
 	public bool evasive = false;
 	public bool speeder = false;
@@ -23,13 +23,13 @@ public class EnemyOne : MonoBehaviour {
 		SetupEnemy();
 		transform.rotation = Quaternion.Euler(0, 0, 270);
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddForce(transform.up * (Random.Range(-100,-300)));
+		//rb.AddForce(transform.up * (Random.Range(-100,-200)));
 		if (evasive)
-			InvokeRepeating("EvasiveMoves", 3, 3);
+			InvokeRepeating("EvasiveMoves", 5, 3);
 		if (shoots)
-			InvokeRepeating("PewPewPew", 1, (Random.Range(2, 9)));
+			InvokeRepeating("PewPewPew", 2, (Random.Range(2, 9)));
 		if (speeder)
-			InvokeRepeating("Speeder", 3, (Random.Range(3, 4)));
+			InvokeRepeating("Speeder", 6, (Random.Range(1, 2)));
 	}
 
 	void SetupEnemy ()
@@ -48,7 +48,8 @@ public class EnemyOne : MonoBehaviour {
 
 	void EvasiveMoves ()
 	{
-		rb.AddForce(transform.up * (Random.Range(-50,-100)));
+		rb.AddForce(transform.right * (Random.Range(-100,100)));
+		rb.AddForce(transform.up * (Random.Range(0,100)));
 	}
 
 	void PewPewPew ()
@@ -58,13 +59,13 @@ public class EnemyOne : MonoBehaviour {
 
 	void Speeder ()
 	{
-		rb.AddForce(transform.right * (Random.Range(-70,70)));
+		rb.AddForce(transform.up * (Random.Range(-10,-20)));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig) {
     if((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "Target"))
     {
-    	health -= 10;
+    	health -= 1;
     	Instantiate(ImpactPrefab, transform.position, transform.rotation);
     	if(trig.gameObject.tag == "Projectile")
     		Destroy(trig.gameObject, 0);

@@ -4,7 +4,8 @@ using System.Collections;
 public class Asteroids : MonoBehaviour {
 
 	public GameObject[] asteroids;
-	public float spawnRate = 3f;
+	public float spawnRate = 5f;
+	public float startDelay = 3f;
 	public float minX = 0f;
 	public float maxX = 0f;
 	public float minY = 0f;
@@ -16,15 +17,17 @@ public class Asteroids : MonoBehaviour {
 	void Start ()
 	{
 		originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-		InvokeRepeating("Spawn", spawnRate, spawnRate);
+		StartCoroutine (Spawn());
 	}
 
-	void Spawn()
+	IEnumerator Spawn()
 	{
-		for (int i = 0; i < 1; i++)
+		yield return new WaitForSeconds (startDelay);
+		for (int i = 0; i < (Random.Range((GameControl.control.CurrentLevel % 2), (GameControl.control.CurrentLevel * 10))); i++)
 		{
-			Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, Quaternion.identity);
 			originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
+			Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, Quaternion.identity);
+			yield return new WaitForSeconds (spawnRate);
 		}
 	}
 
