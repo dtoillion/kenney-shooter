@@ -4,6 +4,7 @@ using System.Collections;
 public class SmallMeteor : MonoBehaviour {
 
 	private Rigidbody2D rb;
+  public GameObject MeteorExplosion;
 
 	private void Awake ()
 	{
@@ -18,7 +19,9 @@ public class SmallMeteor : MonoBehaviour {
       //Destroy(trig.gameObject, 0);
       if (trig.gameObject.tag == "Projectile")
 			  GameControl.control.score += 50f;
-			Destroy(gameObject, 0);
+			Instantiate(MeteorExplosion, transform.position, transform.rotation);
+      MeteorExplosion.transform.parent = null;
+      Destroy(gameObject, 0);
    	}
   }
 

@@ -23,11 +23,14 @@ public class Asteroids : MonoBehaviour {
 	IEnumerator Spawn()
 	{
 		yield return new WaitForSeconds (startDelay);
-		for (int i = 0; i < (Random.Range((GameControl.control.CurrentLevel % 2), (GameControl.control.CurrentLevel * 10))); i++)
+		while(true)
 		{
-			originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-			Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, Quaternion.identity);
-			yield return new WaitForSeconds (spawnRate);
+			for (int i = 0; i < 1; i++)
+			{
+				originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
+				Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, Quaternion.identity);
+			  yield return new WaitForSeconds (spawnRate);
+			}
 		}
 	}
 

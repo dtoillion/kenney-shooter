@@ -23,7 +23,6 @@ public class EnemyOne : MonoBehaviour {
 		SetupEnemy();
 		transform.rotation = Quaternion.Euler(0, 0, 270);
 		rb = GetComponent<Rigidbody2D>();
-		//rb.AddForce(transform.up * (Random.Range(-100,-200)));
 		if (evasive)
 			InvokeRepeating("EvasiveMoves", 5, 3);
 		if (shoots)
@@ -38,12 +37,15 @@ public class EnemyOne : MonoBehaviour {
     sf = (Random.Range(1f, 10f));
 		ef = (Random.Range(1f, 10f));
 		ssf = (Random.Range(1f, 10f));
-		if(sf >= 5f)
-			shoots = true;
-		if(ef >= 4f)
-			evasive = true;
-		if(ssf >= 4f)
-			speeder = true;
+		if(GameControl.control.CurrentLevel >= 3)
+		{
+			if(sf >= 5f)
+				shoots = true;
+			if(ef >= 4f)
+				evasive = true;
+			if(ssf >= 4f)
+				speeder = true;
+		}
 	}
 
 	void EvasiveMoves ()

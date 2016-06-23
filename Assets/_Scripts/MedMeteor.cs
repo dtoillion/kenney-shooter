@@ -4,6 +4,7 @@ using System.Collections;
 public class MedMeteor : MonoBehaviour {
 
 	public GameObject[] SmallMeteors;
+  public GameObject MeteorExplosion;
 	private Rigidbody2D rb;
 	private Vector3 originPosition;
 
@@ -26,6 +27,8 @@ public class MedMeteor : MonoBehaviour {
      	{
   			Instantiate(SmallMeteors[Random.Range(0, SmallMeteors.Length)], originPosition, Quaternion.identity);
      	}
+      Instantiate(MeteorExplosion, transform.position, transform.rotation);
+      MeteorExplosion.transform.parent = null;
 			Destroy(gameObject, 0);
     }
   }

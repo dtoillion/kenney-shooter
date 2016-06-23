@@ -15,11 +15,11 @@ public class WaveMachine : MonoBehaviour {
 	public float maxZ = 0f;
 	private Vector3 originPosition;
 	public AudioClip LevelPass;
-	AudioSource audio;
+	AudioSource waveAudio;
 
 	void Start ()
 	{
-		audio = GetComponent<AudioSource>();
+		waveAudio = GetComponent<AudioSource>();
 		originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
 		StartCoroutine (Spawn());
 	}
@@ -32,11 +32,11 @@ public class WaveMachine : MonoBehaviour {
 			for (int i = 0; i < (Random.Range((GameControl.control.CurrentLevel % 2), (GameControl.control.CurrentLevel * 10))); i++)
 			{
 				originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-				Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, Quaternion.identity);
+				Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, transform.rotation);
 				yield return new WaitForSeconds (spawnRate);
 			}
 			yield return new WaitForSeconds (timeBetweenWaves);
-			audio.PlayOneShot(LevelPass, 1f);
+			waveAudio.PlayOneShot(LevelPass, 1f);
 			GameControl.control.CurrentLevel += 1;
 		}
 	}

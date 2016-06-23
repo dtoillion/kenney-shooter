@@ -10,7 +10,7 @@ public class PickUp : MonoBehaviour {
 		if (trig.gameObject.tag == "Player")
 		{
       GameControl.control.score += 10f;
-      Instantiate(EffectPrefab, transform.position, transform.rotation);
+      Instantiate(EffectPrefab, transform.position, Quaternion.Euler(0, 0, 0));
       EffectPrefab.transform.parent = null;
 			Destroy(gameObject);
 		}
