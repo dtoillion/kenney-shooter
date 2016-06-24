@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WaveMachine : MonoBehaviour {
 
-	public GameObject[] asteroids;
+	public GameObject[] enemies;
 	public float spawnRate = 5f;
 	public float startDelay = 3f;
 	public float timeBetweenWaves = 3f;
@@ -32,7 +32,7 @@ public class WaveMachine : MonoBehaviour {
 			for (int i = 0; i < (Random.Range((GameControl.control.CurrentLevel % 2), (GameControl.control.CurrentLevel * 10))); i++)
 			{
 				originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-				Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, transform.rotation);
+				Instantiate(enemies[Random.Range(0, enemies.Length)], originPosition, transform.rotation);
 				yield return new WaitForSeconds (spawnRate);
 			}
 			yield return new WaitForSeconds (timeBetweenWaves);

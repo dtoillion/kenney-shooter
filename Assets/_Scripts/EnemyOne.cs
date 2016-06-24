@@ -65,7 +65,8 @@ public class EnemyOne : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D trig) {
-    if((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "Target"))
+		// || (trig.gameObject.tag == "Target")
+    if((trig.gameObject.tag == "Projectile"))
     {
     	health -= 1;
     	Instantiate(ImpactPrefab, transform.position, transform.rotation);
