@@ -50,7 +50,7 @@ public class WeaponSystemTurret : MonoBehaviour {
 	private void TurnGun ()
 	{
 		var angle = Mathf.Atan2(RightXInputValue, RightYInputValue) * Mathf.Rad2Deg - 180;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+    transform.rotation = Quaternion.Euler(0, 0, angle);
 	}
 
 }

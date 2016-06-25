@@ -14,6 +14,7 @@ public class GameControl : MonoBehaviour {
 	public float Speed = 60f;
 	public float CurrentFireRate = 0.5f;
 	public bool SpawnPlayer = true;
+	public bool BossPresent = true;
 	public Text scoreHUD;
 	public Text healthHUD;
 	public Text notification;
@@ -26,7 +27,7 @@ public class GameControl : MonoBehaviour {
 	{
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
-		notification.text = ("Level " + CurrentLevel);
+		notification.text = ("Wave " + CurrentLevel);
 	}
 
 	void Awake ()
@@ -36,9 +37,21 @@ public class GameControl : MonoBehaviour {
 			Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
-		notification.text = ("Level " + CurrentLevel);
+		notification.text = ("Wave " + CurrentLevel);
 	}
 
+	public void CheckBoss ()
+	{
+		if((GameObject.Find("Boss01(Clone)")) || (GameObject.Find("Boss02(Clone)")) || (GameObject.Find("Boss03(Clone)")) || (GameObject.Find("Boss04(Clone)")))
+		{
+			Debug.Log("boss detected");
+		} else {
+			if(BossPresent)
+			  BossPresent = false;
+			else
+			  BossPresent = true;
+		}
+	}
 	public void GameOver ()
 	{
 		GameOverCanvas.SetActive(true);

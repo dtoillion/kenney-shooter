@@ -12,6 +12,7 @@ public class MedMeteor : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody2D>();
 		rb.AddTorque(Random.Range(-100,100));
+    rb.AddForce(transform.up * Random.Range(-100,100));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)
@@ -19,7 +20,7 @@ public class MedMeteor : MonoBehaviour {
 
     if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
     {
-			Destroy(trig.gameObject, 0);
+			//Destroy(trig.gameObject, 0);
       if (trig.gameObject.tag == "Projectile")
 			  GameControl.control.score += 25;
      	originPosition = transform.position;

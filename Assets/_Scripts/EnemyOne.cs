@@ -37,7 +37,7 @@ public class EnemyOne : MonoBehaviour {
     sf = (Random.Range(1f, 10f));
 		ef = (Random.Range(1f, 10f));
 		ssf = (Random.Range(1f, 10f));
-		if(GameControl.control.CurrentLevel >= 3)
+		if(GameControl.control.CurrentLevel >= 4)
 		{
 			if(sf >= 5f)
 				shoots = true;

@@ -10,6 +10,7 @@ public class SmallMeteor : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody2D>();
 		rb.AddTorque(Random.Range(-30,30));
+    rb.AddForce(transform.up * Random.Range(-60,60));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)

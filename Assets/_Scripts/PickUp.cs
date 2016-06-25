@@ -4,6 +4,14 @@ using System.Collections;
 public class PickUp : MonoBehaviour {
 
   public GameObject EffectPrefab;
+  private Rigidbody2D rb;
+
+  void Start ()
+  {
+    rb = GetComponent<Rigidbody2D>();
+    rb.AddTorque(Random.Range(-10,10));
+    rb.AddForce(transform.up * Random.Range(-70,70));
+  }
 
 	void OnTriggerEnter2D(Collider2D trig)
 	{
