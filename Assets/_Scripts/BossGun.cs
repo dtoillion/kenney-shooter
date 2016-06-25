@@ -8,17 +8,25 @@ public class BossGun : MonoBehaviour {
   public float fireRate = 0.2f;
   public float burstRate = 6f;
   public float burstLength = 3;
-
-  private Transform target;
+  public float turretSpeed = 3;
+  public Transform target;
 
 	void Start ()
   {
     StartCoroutine (PewPewPew());
 	}
 
-  void Aim()
+  void Update()
   {
-    transform.rotation = Quaternion.Euler(0, 0, Random.Range(70, 110));
+    Aim();
+  }
+
+  void Aim() {
+     target = GameObject.FindWithTag("Player").transform;
+     Vector3 vectorToTarget = target.position - transform.position;
+     float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg - 90;
+     Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+     transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * turretSpeed);
   }
 
   IEnumerator PewPewPew ()
@@ -28,7 +36,6 @@ public class BossGun : MonoBehaviour {
     {
       for (int i = 0; i < burstLength; i++)
       {
-        Aim();
         Instantiate(LaserPrefab, transform.position, transform.rotation);
         yield return new WaitForSeconds (fireRate);
       }

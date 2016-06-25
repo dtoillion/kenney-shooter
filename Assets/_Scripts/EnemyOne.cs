@@ -10,62 +10,48 @@ public class EnemyOne : MonoBehaviour {
 	public GameObject[] Pickups;
 	public float health = 3f;
 	public bool shoots = false;
-	public bool evasive = false;
-	public bool speeder = false;
 	public float sf;
-	public float ef;
-	public float ssf;
-
-	private Rigidbody2D rb;
+	public float burstRate = 6f;
+  public float burstLength = 3f;
+  public float fireRate = 3f;
+  public float startDelay = 3f;
 
 	void Start ()
 	{
 		SetupEnemy();
-		transform.rotation = Quaternion.Euler(0, 0, 270);
-		rb = GetComponent<Rigidbody2D>();
-		if (evasive)
-			InvokeRepeating("EvasiveMoves", 5, 3);
 		if (shoots)
-			InvokeRepeating("PewPewPew", 2, (Random.Range(2, 9)));
-		if (speeder)
-			InvokeRepeating("Speeder", 6, (Random.Range(1, 2)));
+			StartCoroutine(PewPewPew());
 	}
 
 	void SetupEnemy ()
 	{
+		transform.rotation = Quaternion.Euler(0, 0, 270);
 		LaserPrefab = LaserPrefabs[Random.Range(0, LaserPrefabs.Length)];
     sf = (Random.Range(1f, 10f));
-		ef = (Random.Range(1f, 10f));
-		ssf = (Random.Range(1f, 10f));
-		if(GameControl.control.CurrentLevel >= 4)
+		if(sf >= 5f)
 		{
-			if(sf >= 5f)
-				shoots = true;
-			if(ef >= 4f)
-				evasive = true;
-			if(ssf >= 4f)
-				speeder = true;
+			shoots = true;
+			burstRate = Random.Range(1f, 2f);
+			burstLength = Random.Range(1f, GameControl.control.CurrentLevel);
+			fireRate = Random.Range(0.30f, 1f);
 		}
 	}
 
-	void EvasiveMoves ()
-	{
-		rb.AddForce(transform.right * (Random.Range(-100,100)));
-		rb.AddForce(transform.up * (Random.Range(0,100)));
-	}
-
-	void PewPewPew ()
-	{
-		Instantiate(LaserPrefab, transform.position, transform.rotation);
-	}
-
-	void Speeder ()
-	{
-		rb.AddForce(transform.up * (Random.Range(-10,-20)));
-	}
+  IEnumerator PewPewPew ()
+  {
+    yield return new WaitForSeconds (startDelay);
+    while (true)
+    {
+      for (int i = 0; i < burstLength; i++)
+      {
+        Instantiate(LaserPrefab, transform.position, transform.rotation);
+        yield return new WaitForSeconds (fireRate);
+      }
+      yield return new WaitForSeconds (burstRate);
+    }
+  }
 
 	void OnTriggerEnter2D(Collider2D trig) {
-		// || (trig.gameObject.tag == "Target")
     if((trig.gameObject.tag == "Projectile"))
     {
     	health -= 1;
@@ -73,8 +59,6 @@ public class EnemyOne : MonoBehaviour {
     	if(trig.gameObject.tag == "Projectile")
     		Destroy(trig.gameObject, 0);
     	if(health <= 0) {
-	    	if(evasive)
-					GameControl.control.score += 50;
 	    	if(shoots)
 					GameControl.control.score += 50;
 				GameControl.control.score += 100;

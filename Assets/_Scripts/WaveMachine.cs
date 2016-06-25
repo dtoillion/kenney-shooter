@@ -37,14 +37,14 @@ public class WaveMachine : MonoBehaviour {
 				yield return new WaitForSeconds (spawnRate);
 			}
 			yield return new WaitForSeconds (timeBetweenWaves);
-			if(GameControl.control.CurrentLevel >= 4)
+			if(GameControl.control.CurrentLevel >= 3)
 			{
-				for (int i = 0; i < GameControl.control.CurrentLevel - 3; i++)
+				for (int i = 0; i < GameControl.control.CurrentLevel - 2; i++)
 				{
 					GameControl.control.BossPresent = true;
 					originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
 					Instantiate(bosses[Random.Range(0, bosses.Length)], originPosition, transform.rotation);
-					yield return new WaitForSeconds (spawnRate);
+					yield return new WaitForSeconds (spawnRate * 2);
 				}
 			}
 			while (GameControl.control.BossPresent)
@@ -53,6 +53,7 @@ public class WaveMachine : MonoBehaviour {
 			}
 			GameControl.control.CurrentLevel += 1;
 			waveAudio.PlayOneShot(LevelPass, 1f);
+			yield return new WaitForSeconds (5);
 		}
 	}
 
