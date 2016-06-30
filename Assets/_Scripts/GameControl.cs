@@ -44,7 +44,7 @@ public class GameControl : MonoBehaviour {
 	{
 		if((GameObject.Find("Boss01(Clone)")) || (GameObject.Find("Boss02(Clone)")) || (GameObject.Find("Boss03(Clone)")) || (GameObject.Find("Boss04(Clone)")))
 		{
-			Debug.Log("boss detected");
+			// Debug.Log("boss detected");
 		} else {
 			if(BossPresent)
 			  BossPresent = false;
