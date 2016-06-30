@@ -18,7 +18,7 @@ public class Meteor : MonoBehaviour {
   {
     if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
     {
-			//Destroy(trig.gameObject, 0);
+			Destroy(trig.gameObject, 0);
 			if(trig.gameObject.tag == "Projectile")
         GameControl.control.score += 10;
      	originPosition = transform.position;

@@ -17,7 +17,7 @@ public class SmallMeteor : MonoBehaviour {
 	{
     if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
     {
-      //Destroy(trig.gameObject, 0);
+      Destroy(trig.gameObject, 0);
       if (trig.gameObject.tag == "Projectile")
 			  GameControl.control.score += 50f;
 			Instantiate(MeteorExplosion, transform.position, transform.rotation);
