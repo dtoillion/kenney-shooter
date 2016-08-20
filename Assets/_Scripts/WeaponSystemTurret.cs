@@ -3,12 +3,8 @@ using System.Collections;
 
 public class WeaponSystemTurret : MonoBehaviour {
 
-	public GameObject LaserPrefabGreen;
-	public GameObject LaserPrefabRed;
-	public GameObject LaserPrefabBlue;
-
-	private GameObject CurrentWeaponPrefab;
-	private int CurrentWeapon;
+	public GameObject[] CurrentWeaponPrefab;
+	private int CurrentWeaponInt = 0;
 	private float CurrentFireRate;
 	private float nextFire = 0.0f;
 	private float RightYInputValue;
@@ -16,6 +12,8 @@ public class WeaponSystemTurret : MonoBehaviour {
 
 	private void Start ()
 	{
+		CurrentWeaponInt = GameControl.control.CurrentWeaponInt;
+		CurrentFireRate = GameControl.control.CurrentFireRate;
 		nextFire = CurrentFireRate;
 	}
 
@@ -23,14 +21,6 @@ public class WeaponSystemTurret : MonoBehaviour {
 	{
 		RightYInputValue = Input.GetAxis("RVertical");
 		RightXInputValue = Input.GetAxis("RHorizontal");
-		CurrentWeapon = GameControl.control.CurrentWeapon;
-		CurrentFireRate = GameControl.control.CurrentFireRate;
-		if(CurrentWeapon == 1)
-		  CurrentWeaponPrefab = LaserPrefabGreen;
-		if(CurrentWeapon == 2)
-		  CurrentWeaponPrefab = LaserPrefabRed;
-		if(CurrentWeapon == 3)
-		  CurrentWeaponPrefab = LaserPrefabBlue;
 	}
 
 	private void FixedUpdate ()
@@ -42,8 +32,10 @@ public class WeaponSystemTurret : MonoBehaviour {
 
 		if(Input.GetButton("Fire4") && Time.time > nextFire)
 		{
+			CurrentWeaponInt = GameControl.control.CurrentWeaponInt;
+			CurrentFireRate = GameControl.control.CurrentFireRate;
 			nextFire = Time.time + CurrentFireRate;
-			Instantiate(CurrentWeaponPrefab, transform.position, transform.rotation);
+			Instantiate(CurrentWeaponPrefab[CurrentWeaponInt], transform.position, transform.rotation);
 		}
 	}
 

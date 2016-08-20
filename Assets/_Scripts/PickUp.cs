@@ -10,14 +10,14 @@ public class PickUp : MonoBehaviour {
   {
     rb = GetComponent<Rigidbody2D>();
     rb.AddTorque(Random.Range(-10,10));
-    rb.AddForce(transform.up * Random.Range(-70,70));
+    rb.AddForce(transform.up * Random.Range(-90,90));
+    rb.AddForce(transform.right * Random.Range(-90,90));
   }
 
 	void OnTriggerEnter2D(Collider2D trig)
 	{
 		if (trig.gameObject.tag == "Player")
 		{
-      GameControl.control.score += 10f;
       Instantiate(EffectPrefab, transform.position, Quaternion.Euler(0, 0, 0));
       EffectPrefab.transform.parent = null;
 			Destroy(gameObject);

@@ -8,6 +8,10 @@ public class BossController : MonoBehaviour {
   public GameObject ExplosionPrefab;
   public GameObject[] Pickups;
 
+  void Awake () {
+    health = (10 + Random.Range(1, GameControl.control.CurrentLevel));
+  }
+
   void OnTriggerEnter2D(Collider2D trig) {
     if((trig.gameObject.tag == "Projectile"))
     {

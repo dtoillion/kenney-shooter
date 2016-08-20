@@ -27,6 +27,7 @@ public class EnemyOne : MonoBehaviour {
 	{
 		transform.rotation = Quaternion.Euler(0, 0, 270);
 		LaserPrefab = LaserPrefabs[Random.Range(0, LaserPrefabs.Length)];
+    health = Random.Range(3, (3 + GameControl.control.CurrentLevel));
     sf = (Random.Range(1f, 10f));
 		if(sf >= 5f)
 		{

@@ -39,28 +39,33 @@ public class PlayerController : MonoBehaviour {
     if (trig.gameObject.tag == "EnemyLaser")
     {
      	Destroy(trig.gameObject, 0);
-     	GameControl.control.health-=1f;
+     	GameControl.control.health -= 1f;
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
 
     if (trig.gameObject.tag == "PickUpGreen")
     {
-    	GameControl.control.CurrentWeapon = 1;
+      GameControl.control.Speed += 10f;
     }
 
-    if (trig.gameObject.tag == "PickUpRed")
+    if ((trig.gameObject.tag == "PickUpRed") & (GameControl.control.CurrentFireRate >= 0.2f))
     {
-    	GameControl.control.CurrentWeapon = 2;
+      GameControl.control.CurrentFireRate -= 0.1f;
     }
 
     if (trig.gameObject.tag == "PickUpBlue")
     {
-    	GameControl.control.CurrentWeapon = 3;
+      if(GameControl.control.CurrentWeaponInt >= 2)
+      {
+        GameControl.control.CurrentWeaponInt = 0;
+      } else {
+        GameControl.control.CurrentWeaponInt += 1;
+      }
     }
 
     if (trig.gameObject.tag == "PickUpYellow")
     {
-    	GameControl.control.health += 1;
+    	GameControl.control.health += 1f;
     }
 
   }

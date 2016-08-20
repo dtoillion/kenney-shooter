@@ -9,25 +9,29 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour {
 
 	public static GameControl control;
-	public float score = 0f;
-	public float health= 100f;
-	public float Speed = 60f;
-	public float CurrentFireRate = 0.5f;
 	public bool SpawnPlayer = true;
 	public bool BossPresent = true;
-	public Text scoreHUD;
-	public Text healthHUD;
-	public Text notification;
 	public GameObject GameOverCanvas;
 	public GameObject PlayerShip;
-	public int CurrentWeapon = 1;
+	public float score;
+	public float health;
+	public float Speed;
+	public float CurrentFireRate;
 	public float CurrentLevel = 1;
+	public int CurrentWeaponInt = 0;
+	public Text scoreHUD;
+	public Text healthHUD;
+	public Text speedHUD;
+	public Text firerateHUD;
+	public Text currentlevelHUD;
 
 	void Update ()
 	{
 		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
 		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
-		notification.text = ("Wave " + CurrentLevel);
+		speedHUD.text = "Speed: " + GameControl.control.Speed.ToString ("n0");
+		firerateHUD.text = "Fire Rate: " + GameControl.control.CurrentFireRate.ToString ("F");
+		currentlevelHUD.text = ("Wave " + CurrentLevel);
 	}
 
 	void Awake ()
@@ -35,16 +39,13 @@ public class GameControl : MonoBehaviour {
 		control = this;
 		if(SpawnPlayer)
 			Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
-		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
-		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
-		notification.text = ("Wave " + CurrentLevel);
 	}
 
 	public void CheckBoss ()
 	{
 		if((GameObject.Find("Boss01(Clone)")) || (GameObject.Find("Boss02(Clone)")) || (GameObject.Find("Boss03(Clone)")) || (GameObject.Find("Boss04(Clone)")))
 		{
-			// Debug.Log("boss detected");
+			Debug.Log("boss detected");
 		} else {
 			if(BossPresent)
 			  BossPresent = false;
@@ -52,6 +53,7 @@ public class GameControl : MonoBehaviour {
 			  BossPresent = true;
 		}
 	}
+
 	public void GameOver ()
 	{
 		GameOverCanvas.SetActive(true);
