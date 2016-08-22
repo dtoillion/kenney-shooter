@@ -30,12 +30,13 @@ public class WeaponSystemTurret : MonoBehaviour {
 			TurnGun ();
 		}
 
-		if(Input.GetButton("Fire4") && Time.time > nextFire)
+		if(Input.GetButton("Fire4") && GameControl.control.ammo >=1 && Time.time > nextFire)
 		{
 			CurrentWeaponInt = GameControl.control.CurrentWeaponInt;
 			CurrentFireRate = GameControl.control.CurrentFireRate;
 			nextFire = Time.time + CurrentFireRate;
 			Instantiate(CurrentWeaponPrefab[CurrentWeaponInt], transform.position, transform.rotation);
+			GameControl.control.ammo -= 1;
 		}
 	}
 

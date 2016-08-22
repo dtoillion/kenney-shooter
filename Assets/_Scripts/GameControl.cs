@@ -9,36 +9,40 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour {
 
 	public static GameControl control;
-	public bool SpawnPlayer = true;
 	public bool BossPresent = true;
 	public GameObject GameOverCanvas;
 	public GameObject PlayerShip;
 	public float score;
+	public float kills;
 	public float health;
 	public float Speed;
 	public float CurrentFireRate;
+	public float ammo;
 	public float CurrentLevel = 1;
 	public int CurrentWeaponInt = 0;
 	public Text scoreHUD;
+	public Text killsHUD;
 	public Text healthHUD;
 	public Text speedHUD;
 	public Text firerateHUD;
+	public Text ammoHUD;
 	public Text currentlevelHUD;
 
 	void Update ()
 	{
-		healthHUD.text = "Health: " + GameControl.control.health.ToString ("n0");
-		scoreHUD.text = "Score: " + GameControl.control.score.ToString ("n0");
-		speedHUD.text = "Speed: " + GameControl.control.Speed.ToString ("n0");
-		firerateHUD.text = "Fire Rate: " + GameControl.control.CurrentFireRate.ToString ("F");
+		healthHUD.text = GameControl.control.health.ToString ("n0");
+		scoreHUD.text = GameControl.control.score.ToString ("n0");
+		killsHUD.text = GameControl.control.kills.ToString ("n0");
+		speedHUD.text = GameControl.control.Speed.ToString ("n0");
+		firerateHUD.text = GameControl.control.CurrentFireRate.ToString ("F");
+		ammoHUD.text = GameControl.control.ammo.ToString ("n0");
 		currentlevelHUD.text = ("Wave " + CurrentLevel);
 	}
 
 	void Awake ()
 	{
 		control = this;
-		if(SpawnPlayer)
-			Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
+		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 	}
 
 	public void CheckBoss ()

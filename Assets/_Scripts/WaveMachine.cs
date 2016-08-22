@@ -4,6 +4,7 @@ using System.Collections;
 public class WaveMachine : MonoBehaviour {
 
 	public GameObject[] enemies;
+	public GameObject[] enemies2;
 	public GameObject[] bosses;
 	public float spawnRate = 5f;
 	public float startDelay = 3f;
@@ -39,19 +40,31 @@ public class WaveMachine : MonoBehaviour {
 			yield return new WaitForSeconds (timeBetweenWaves);
 			if(GameControl.control.CurrentLevel >= 3)
 			{
+				for (int i = 0; i < (Random.Range(1, (GameControl.control.CurrentLevel / 2))); i++)
+				{
+					originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
+					Instantiate(enemies2[Random.Range(0, enemies2.Length)], originPosition, transform.rotation);
+					yield return new WaitForSeconds (spawnRate);
+				}
+			}
+			yield return new WaitForSeconds (timeBetweenWaves);
+			if(GameControl.control.CurrentLevel >= 4)
+			{
 				for (int i = 0; i < GameControl.control.CurrentLevel - 2; i++)
 				{
 					GameControl.control.BossPresent = true;
 					originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
 					Instantiate(bosses[Random.Range(0, bosses.Length)], originPosition, transform.rotation);
-					yield return new WaitForSeconds (spawnRate * 2);
+					yield return new WaitForSeconds (spawnRate);
 				}
 			}
+			yield return new WaitForSeconds (timeBetweenWaves);
 			while (GameControl.control.BossPresent)
 			{
 				yield return null;
 			}
 			GameControl.control.CurrentLevel += 1;
+			BGSwitcher.control.UpdateBackground();
 			waveAudio.PlayOneShot(LevelPass, 1f);
 			yield return new WaitForSeconds (5);
 		}

@@ -8,13 +8,13 @@ public class EnemyOne : MonoBehaviour {
 	private GameObject LaserPrefab;
 	public GameObject[] LaserPrefabs;
 	public GameObject[] Pickups;
-	public float health = 3f;
-	public bool shoots = false;
-	public float sf;
-	public float burstRate = 6f;
-  public float burstLength = 3f;
-  public float fireRate = 3f;
-  public float startDelay = 3f;
+	private float health;
+	private bool shoots = false;
+	private float sf;
+	private float burstRate;
+  private float burstLength;
+  private float fireRate;
+  private float startDelay = 0.5f;
 
 	void Start ()
 	{
@@ -27,14 +27,14 @@ public class EnemyOne : MonoBehaviour {
 	{
 		transform.rotation = Quaternion.Euler(0, 0, 270);
 		LaserPrefab = LaserPrefabs[Random.Range(0, LaserPrefabs.Length)];
-    health = Random.Range(3, (3 + GameControl.control.CurrentLevel));
+    health = Random.Range(1, (GameControl.control.CurrentLevel));
     sf = (Random.Range(1f, 10f));
 		if(sf >= 5f)
 		{
 			shoots = true;
-			burstRate = Random.Range(1f, 2f);
+			burstRate = Random.Range(2f, 3f);
 			burstLength = Random.Range(1f, GameControl.control.CurrentLevel);
-			fireRate = Random.Range(0.30f, 1f);
+			fireRate = Random.Range(0.40f, 1f);
 		}
 	}
 
@@ -63,6 +63,7 @@ public class EnemyOne : MonoBehaviour {
 	    	if(shoots)
 					GameControl.control.score += 50;
 				GameControl.control.score += 100;
+        GameControl.control.kills += 1f;
 				Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 				ExplosionPrefab.transform.parent = null;
 				for (int i = 0; i < 1; i++)

@@ -6,15 +6,14 @@ public class MainMenu : MonoBehaviour {
 
   public GameObject loadingScreenPrefab;
 
-  void Update()
+  public void ExitGame()
   {
-  	if(Input.GetKeyDown("escape"))
-    {
-     	Application.Quit();
-    } else if(Input.anyKeyDown) {
-      loadingScreenPrefab.SetActive(true);
-      SceneManager.LoadScene("Level001");
-    }
+    Application.Quit();
   }
 
+  public void StartSurvivalMode()
+  {
+    loadingScreenPrefab.SetActive(true);
+    SceneManager.LoadScene("Level001");
+  }
 }

@@ -48,24 +48,19 @@ public class PlayerController : MonoBehaviour {
       GameControl.control.Speed += 10f;
     }
 
-    if ((trig.gameObject.tag == "PickUpRed") & (GameControl.control.CurrentFireRate >= 0.2f))
+    if ((trig.gameObject.tag == "PickUpRed") & (GameControl.control.CurrentFireRate >= 0.15f))
     {
-      GameControl.control.CurrentFireRate -= 0.1f;
+      GameControl.control.CurrentFireRate -= 0.05f;
     }
 
-    if (trig.gameObject.tag == "PickUpBlue")
+    if (trig.gameObject.tag == "AmmoPickUp")
     {
-      if(GameControl.control.CurrentWeaponInt >= 2)
-      {
-        GameControl.control.CurrentWeaponInt = 0;
-      } else {
-        GameControl.control.CurrentWeaponInt += 1;
-      }
+      GameControl.control.ammo += 10f;
     }
 
-    if (trig.gameObject.tag == "PickUpYellow")
+    if (trig.gameObject.tag == "ShieldPickUp")
     {
-    	GameControl.control.health += 1f;
+    	GameControl.control.health += 2f;
     }
 
   }
