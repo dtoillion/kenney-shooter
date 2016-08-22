@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
 
     if (trig.gameObject.tag == "PickUpGreen")
     {
-      GameControl.control.Speed += 10f;
+      GameControl.control.Speed += 5f;
     }
 
     if ((trig.gameObject.tag == "PickUpRed") & (GameControl.control.CurrentFireRate >= 0.15f))
@@ -55,12 +55,12 @@ public class PlayerController : MonoBehaviour {
 
     if (trig.gameObject.tag == "AmmoPickUp")
     {
-      GameControl.control.ammo += 10f;
+      GameControl.control.ammo += 25f;
     }
 
     if (trig.gameObject.tag == "ShieldPickUp")
     {
-    	GameControl.control.health += 2f;
+    	GameControl.control.health += 1f;
     }
 
   }

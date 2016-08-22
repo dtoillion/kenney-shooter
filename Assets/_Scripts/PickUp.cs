@@ -9,7 +9,6 @@ public class PickUp : MonoBehaviour {
   void Start ()
   {
     rb = GetComponent<Rigidbody2D>();
-    rb.AddTorque(Random.Range(-10,10));
     rb.AddForce(transform.up * Random.Range(-90,90));
     rb.AddForce(transform.right * Random.Range(-90,90));
   }
