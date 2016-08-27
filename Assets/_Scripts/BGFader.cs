@@ -4,6 +4,7 @@ using System.Collections;
 public class BGFader : MonoBehaviour {
 
   public SpriteRenderer bgSprite;
+  public float colorVal = 1f;
   public float min = 0.0f;
   public float max = 1f;
   public float duration = 3.0f;
@@ -21,7 +22,7 @@ public class BGFader : MonoBehaviour {
     if(!faded)
     {
       float t = (Time.time - startTime) / duration;
-      bgSprite.color = new Color(169f,187f,221f,Mathf.SmoothStep(min, max, t));
+      bgSprite.color = new Color(colorVal, colorVal, colorVal, Mathf.SmoothStep(min, max, t));
     }
 	}
 

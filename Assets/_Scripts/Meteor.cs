@@ -20,7 +20,7 @@ public class Meteor : MonoBehaviour {
     {
 			Destroy(trig.gameObject, 0);
 			if(trig.gameObject.tag == "Projectile")
-        GameControl.control.score += 10;
+        GameControl.control.score += (100 + GameControl.control.CurrentLevel * GameControl.control.kills);
      	originPosition = transform.position;
      	for (int i = 0; i < 5; i++)
      	{

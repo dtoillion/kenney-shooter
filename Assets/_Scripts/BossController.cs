@@ -9,7 +9,7 @@ public class BossController : MonoBehaviour {
   public GameObject[] Pickups;
 
   void Awake () {
-    health = (10 + Random.Range(1, GameControl.control.CurrentLevel));
+    health = (9 + GameControl.control.CurrentLevel);
   }
 
   void OnTriggerEnter2D(Collider2D trig) {
@@ -19,7 +19,7 @@ public class BossController : MonoBehaviour {
       Instantiate(ImpactPrefab, transform.position, transform.rotation);
       Destroy(trig.gameObject, 0);
       if(health <= 0) {
-        GameControl.control.score += 1000;
+        GameControl.control.score += (1000 + GameControl.control.CurrentLevel * GameControl.control.kills);
         GameControl.control.kills += 1f;
         Instantiate(ExplosionPrefab, transform.position, transform.rotation);
         ExplosionPrefab.transform.parent = null;

@@ -11,8 +11,9 @@ public class MedMeteor : MonoBehaviour {
 	private void Awake ()
 	{
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddTorque(Random.Range(-100,100));
-    rb.AddForce(transform.up * Random.Range(-100,100));
+		rb.AddTorque(Random.Range(-500,500));
+    rb.AddForce(transform.right * Random.Range(-5000,5000));
+    rb.AddForce(transform.up * Random.Range(-5000,5000));
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)
@@ -22,7 +23,7 @@ public class MedMeteor : MonoBehaviour {
     {
 			Destroy(trig.gameObject, 0);
       if (trig.gameObject.tag == "Projectile")
-			  GameControl.control.score += 25;
+			  GameControl.control.score += (250 + GameControl.control.CurrentLevel * GameControl.control.kills);
      	originPosition = transform.position;
      	for (int i = 0; i < 5; i++)
      	{

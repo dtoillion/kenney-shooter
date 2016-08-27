@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour {
 	public static GameControl control;
 	public bool BossPresent = true;
 	public GameObject GameOverCanvas;
+	public GameObject GameWinCanvas;
 	public GameObject PlayerShip;
 	public float score;
 	public float kills;
@@ -30,12 +31,12 @@ public class GameControl : MonoBehaviour {
 
 	void Update ()
 	{
-		healthHUD.text = GameControl.control.health.ToString ("n0");
+		healthHUD.text = ("Shield: " + GameControl.control.health.ToString ("n0"));
 		scoreHUD.text = GameControl.control.score.ToString ("n0");
-		killsHUD.text = GameControl.control.kills.ToString ("n0");
-		speedHUD.text = GameControl.control.Speed.ToString ("n0");
-		firerateHUD.text = GameControl.control.CurrentFireRate.ToString ("F");
-		ammoHUD.text = GameControl.control.ammo.ToString ("n0");
+		killsHUD.text = ("Kills: " + GameControl.control.kills.ToString ("n0"));
+		speedHUD.text = ("Speed: " + GameControl.control.Speed.ToString ("n0"));
+		firerateHUD.text = ("Rate:" + GameControl.control.CurrentFireRate.ToString ("F"));
+		ammoHUD.text = ("Ammo: " + GameControl.control.ammo.ToString ("n0"));
 		currentlevelHUD.text = ("Wave " + CurrentLevel);
 	}
 
@@ -61,6 +62,12 @@ public class GameControl : MonoBehaviour {
 	public void GameOver ()
 	{
 		GameOverCanvas.SetActive(true);
+		Time.timeScale = 0;
+	}
+
+	public void GameWin ()
+	{
+		GameWinCanvas.SetActive(true);
 		Time.timeScale = 0;
 	}
 

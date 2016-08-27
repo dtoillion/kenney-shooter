@@ -32,7 +32,7 @@ public class EnemyOne : MonoBehaviour {
 		if(sf >= 5f)
 		{
 			shoots = true;
-			burstRate = Random.Range(2f, 3f);
+			burstRate = Random.Range(1f, 3f);
 			burstLength = Random.Range(1f, GameControl.control.CurrentLevel);
 			fireRate = Random.Range(0.40f, 1f);
 		}
@@ -60,15 +60,15 @@ public class EnemyOne : MonoBehaviour {
     	if(trig.gameObject.tag == "Projectile")
     		Destroy(trig.gameObject, 0);
     	if(health <= 0) {
-	    	if(shoots)
-					GameControl.control.score += 50;
-				GameControl.control.score += 100;
         GameControl.control.kills += 1f;
+        if(shoots)
+          GameControl.control.score += (50 + GameControl.control.CurrentLevel * GameControl.control.kills);
+        GameControl.control.score += (100 + GameControl.control.CurrentLevel * GameControl.control.kills);
 				Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 				ExplosionPrefab.transform.parent = null;
 				for (int i = 0; i < 1; i++)
 				{
-					Instantiate(Pickups[Random.Range(0, Pickups.Length)], transform.position, Quaternion.identity);
+					Instantiate(Pickups[Random.Range(1, Pickups.Length)], transform.position, Quaternion.identity);
 				}
 				Destroy(gameObject, 0.1f);
     	}

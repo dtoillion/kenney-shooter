@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour {
 
     if (trig.gameObject.tag == "AmmoPickUp")
     {
-      GameControl.control.ammo += 25f;
+      GameControl.control.ammo += 50f;
     }
 
     if (trig.gameObject.tag == "ShieldPickUp")

@@ -3,21 +3,38 @@ using System.Collections;
 
 public class PlayerUpgrades : MonoBehaviour {
 
+  public static PlayerUpgrades control;
+
   public GameObject Cockpit;
   public GameObject Engine;
   public GameObject Gun;
   public GameObject Turret;
   public GameObject TurretTwo;
-  AudioSource UpgradeNoiseAudio;
   public AudioClip UpgradeNoise;
 
-	void Start()
+  AudioSource UpgradeNoiseAudio;
+
+  void Awake ()
+  {
+    control = this;
+  }
+
+  void Start()
   {
     UpgradeNoiseAudio = GetComponent<AudioSource>();
   }
 
-  void Update ()
+  void PlayNoise()
   {
+    UpgradeNoiseAudio.PlayOneShot(UpgradeNoise, 1f);
+  }
 
+  public void UnlockGuns ()
+  {
+    if(GameControl.control.score >= 5000)
+    {
+      Gun.SetActive(true);
+      PlayNoise();
+    }
 	}
 }
