@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 			ExplosionPrefab.transform.parent = null;
-			Destroy(gameObject);
+			gameObject.SetActive(false);
 		}
 	}
 
@@ -43,24 +43,24 @@ public class PlayerController : MonoBehaviour {
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
 
-    if (trig.gameObject.tag == "PickUpGreen")
+    if (trig.gameObject.tag == "SpeedPickUp")
     {
-      GameControl.control.Speed += 5f;
+      GameControl.control.Speed += 10f;
     }
 
-    if ((trig.gameObject.tag == "PickUpRed") & (GameControl.control.CurrentFireRate >= 0.15f))
+    if ((trig.gameObject.tag == "FireRatePickUp") & (GameControl.control.CurrentFireRate >= 0.15f))
     {
       GameControl.control.CurrentFireRate -= 0.05f;
     }
 
     if (trig.gameObject.tag == "AmmoPickUp")
     {
-      GameControl.control.ammo += 50f;
+      GameControl.control.ammo += 100f;
     }
 
     if (trig.gameObject.tag == "ShieldPickUp")
     {
-    	GameControl.control.health += 1f;
+    	GameControl.control.health += 2f;
     }
 
   }

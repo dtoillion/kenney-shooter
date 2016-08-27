@@ -8,33 +8,32 @@ public class PlayerUpgrades : MonoBehaviour {
   public GameObject Cockpit;
   public GameObject Engine;
   public GameObject Gun;
-  public GameObject Turret;
-  public GameObject TurretTwo;
-  public AudioClip UpgradeNoise;
-
-  AudioSource UpgradeNoiseAudio;
+  public GameObject Gun2;
+  public GameObject Gun3;
 
   void Awake ()
   {
     control = this;
   }
 
-  void Start()
-  {
-    UpgradeNoiseAudio = GetComponent<AudioSource>();
-  }
-
-  void PlayNoise()
-  {
-    UpgradeNoiseAudio.PlayOneShot(UpgradeNoise, 1f);
-  }
-
   public void UnlockGuns ()
   {
-    if(GameControl.control.score >= 5000)
+    if(GameControl.control.CurrentLevel == 2)
+    {
+      Engine.SetActive(true);
+    }
+    if(GameControl.control.CurrentLevel == 3)
     {
       Gun.SetActive(true);
-      PlayNoise();
+      Cockpit.SetActive(true);
+    }
+    if(GameControl.control.CurrentLevel == 4)
+    {
+      Gun2.SetActive(true);
+    }
+    if(GameControl.control.CurrentLevel == 5)
+    {
+      Gun3.SetActive(true);
     }
 	}
 }

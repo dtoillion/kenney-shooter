@@ -43,7 +43,7 @@ public class GameControl : MonoBehaviour {
 	void Awake ()
 	{
 		control = this;
-		Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
+		//Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 	}
 
 	public void CheckBoss ()

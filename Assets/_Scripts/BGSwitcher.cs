@@ -6,7 +6,7 @@ public class BGSwitcher : MonoBehaviour {
 
   public static BGSwitcher control;
   public GameObject[] bgImages;
-  private int CurrentLevelInt = 0;
+  public int CurrentLevelInt = 0;
 
 	void Awake ()
   {
@@ -24,10 +24,13 @@ public class BGSwitcher : MonoBehaviour {
     {
       bgImages[i].SetActive(false);
     }
-    if(CurrentLevelInt == bgImages.Length) {
-      CurrentLevelInt = 0;
-    } else {
+    if(CurrentLevelInt != bgImages.Length - 1)
+    {
       CurrentLevelInt += 1;
+      Debug.Log("Increase Lewvel int");
+    } else {
+      CurrentLevelInt = 0;
+      Debug.Log("reset Lewvel int");
     }
     bgImages[CurrentLevelInt].SetActive(true);
   }
