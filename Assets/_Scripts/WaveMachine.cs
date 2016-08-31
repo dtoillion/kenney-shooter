@@ -65,7 +65,7 @@ public class WaveMachine : MonoBehaviour {
 			}
 			GameControl.control.CurrentLevel += 1;
 			BGSwitcher.control.UpdateBackground();
-			PlayerUpgrades.control.UnlockGuns();
+			PlayerUpgrades.control.LevelUp();
 			waveAudio.PlayOneShot(LevelPass, 1f);
 			yield return new WaitForSeconds (5);
 		}

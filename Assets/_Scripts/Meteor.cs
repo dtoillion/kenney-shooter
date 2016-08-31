@@ -14,7 +14,12 @@ public class Meteor : MonoBehaviour {
 	private void Awake ()
 	{
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddTorque(Random.Range(-100,100));
+		rb.AddTorque(Random.Range(-500,500));
+    if(!super)
+    {
+      rb.AddForce(transform.right * Random.Range(-5000,5000));
+      rb.AddForce(transform.up * Random.Range(-5000,5000));
+    }
 	}
 
 	void OnTriggerEnter2D(Collider2D trig)
@@ -31,17 +36,9 @@ public class Meteor : MonoBehaviour {
         originPosition = transform.position;
         Instantiate(MeteorExplosion, transform.position, transform.rotation);
         MeteorExplosion.transform.parent = null;
-        if(super)
+        for (int i = 0; i < 5; i++)
         {
-          for (int i = 0; i < 12; i++)
-          {
-            Instantiate(MedMeteors[Random.Range(0, MedMeteors.Length)], originPosition, Quaternion.identity);
-          }
-        } else {
-          for (int i = 0; i < 5; i++)
-          {
-            Instantiate(MedMeteors[Random.Range(0, MedMeteors.Length)], originPosition, Quaternion.identity);
-          }
+          Instantiate(MedMeteors[Random.Range(0, MedMeteors.Length)], originPosition, Quaternion.identity);
         }
         Destroy(gameObject, 0);
       }

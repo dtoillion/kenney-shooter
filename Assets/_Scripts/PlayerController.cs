@@ -41,7 +41,9 @@ public class PlayerController : MonoBehaviour {
     if (trig.gameObject.tag == "EnemyLaser")
     {
      	Destroy(trig.gameObject, 0);
-     	GameControl.control.health -= 1f;
+      if(!PlayerUpgrades.control.Shielded)
+     	  GameControl.control.health -= 1f;
+      PlayerUpgrades.control.ResetShield();
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
 
@@ -58,17 +60,12 @@ public class PlayerController : MonoBehaviour {
     if (trig.gameObject.tag == "AmmoPickUp")
     {
       GameControl.control.ammo += 100f;
-      if(GameControl.control.CurrentWeaponInt < 2)
-      {
-        GameControl.control.CurrentWeaponInt += 1;
-      } else {
-        GameControl.control.CurrentWeaponInt = 0;
-      }
+      GameControl.control.CurrentWeaponInt = (Random.Range(0, 29));
     }
 
     if (trig.gameObject.tag == "ShieldPickUp")
     {
-    	GameControl.control.health += 2f;
+      PlayerUpgrades.control.ShieldBoost();
     }
 
   }
@@ -79,7 +76,9 @@ public class PlayerController : MonoBehaviour {
 		{
 			crash = true;
 			Invoke("Crashed", 0.7f);
-			GameControl.control.health -= 1f;
+      if(!PlayerUpgrades.control.Shielded)
+			  GameControl.control.health -= 1f;
+      PlayerUpgrades.control.ResetShield();
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
 		}
 	}

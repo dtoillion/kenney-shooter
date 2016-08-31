@@ -23,6 +23,7 @@ public class GameControl : MonoBehaviour {
 	public float CurrentLevel = 1;
 	public int CurrentWeaponInt = 0;
 	public Text scoreHUD;
+	public Text currentweaponHUD;
 	public Text killsHUD;
 	public Text healthHUD;
 	public Text speedHUD;
@@ -34,7 +35,8 @@ public class GameControl : MonoBehaviour {
 
 	void Update ()
 	{
-		healthHUD.text = ("Shield: " + GameControl.control.health.ToString ("n0"));
+		currentweaponHUD.text = ("Weapon: " + GameControl.control.CurrentWeaponInt.ToString ("n0"));
+		healthHUD.text = ("Health: " + GameControl.control.health.ToString ("n0"));
 		scoreHUD.text = GameControl.control.score.ToString ("n0");
 		killsHUD.text = ("Kills: " + GameControl.control.kills.ToString ("n0"));
 		speedHUD.text = ("Speed: " + GameControl.control.Speed.ToString ("n0"));
