@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour {
 	{
 		if(((XInputValue != 0) || (YInputValue != 0)) && !(crash))
 			MoveShip ();
+    if(Input.GetKey("escape"))
+      GameControl.control.PauseGame();
 	}
 
 	void OnTriggerEnter2D(Collider2D trig) {
@@ -45,17 +47,23 @@ public class PlayerController : MonoBehaviour {
 
     if (trig.gameObject.tag == "SpeedPickUp")
     {
-      GameControl.control.Speed += 10f;
+      PlayerUpgrades.control.SpeedBoost();
     }
 
-    if ((trig.gameObject.tag == "FireRatePickUp") & (GameControl.control.CurrentFireRate >= 0.15f))
+    if (trig.gameObject.tag == "FireRatePickUp")
     {
-      GameControl.control.CurrentFireRate -= 0.05f;
+      PlayerUpgrades.control.FireRateBoost();
     }
 
     if (trig.gameObject.tag == "AmmoPickUp")
     {
       GameControl.control.ammo += 100f;
+      if(GameControl.control.CurrentWeaponInt < 2)
+      {
+        GameControl.control.CurrentWeaponInt += 1;
+      } else {
+        GameControl.control.CurrentWeaponInt = 0;
+      }
     }
 
     if (trig.gameObject.tag == "ShieldPickUp")
@@ -67,7 +75,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		if ((collision.gameObject.tag == "Target") && !(crash))
+		if ((collision.gameObject.tag == "Target") || (collision.gameObject.tag == "Boss") && !(crash))
 		{
 			crash = true;
 			Invoke("Crashed", 0.7f);

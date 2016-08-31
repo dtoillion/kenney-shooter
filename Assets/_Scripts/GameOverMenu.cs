@@ -14,4 +14,9 @@ public class GameOverMenu : MonoBehaviour {
     GameControl.control.ResetGame();
   }
 
+  public void PauseGame ()
+  {
+    GameControl.control.PauseGame();
+  }
+
 }

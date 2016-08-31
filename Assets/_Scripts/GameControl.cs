@@ -10,6 +10,7 @@ public class GameControl : MonoBehaviour {
 
 	public static GameControl control;
 	public bool BossPresent = true;
+	public GameObject GamePauseCanvas;
 	public GameObject GameOverCanvas;
 	public GameObject GameWinCanvas;
 	public GameObject PlayerShip;
@@ -29,6 +30,8 @@ public class GameControl : MonoBehaviour {
 	public Text ammoHUD;
 	public Text currentlevelHUD;
 
+	private bool Paused = false;
+
 	void Update ()
 	{
 		healthHUD.text = ("Shield: " + GameControl.control.health.ToString ("n0"));
@@ -43,12 +46,11 @@ public class GameControl : MonoBehaviour {
 	void Awake ()
 	{
 		control = this;
-		//Instantiate(PlayerShip, transform.position, Quaternion.Euler(0, 0, 270));
 	}
 
 	public void CheckBoss ()
 	{
-		if((GameObject.Find("Boss01(Clone)")) || (GameObject.Find("Boss02(Clone)")) || (GameObject.Find("Boss03(Clone)")) || (GameObject.Find("Boss04(Clone)")))
+		if(GameObject.FindGameObjectsWithTag("Boss").Length >= 1)
 		{
 			Debug.Log("boss detected");
 		} else {
@@ -56,6 +58,20 @@ public class GameControl : MonoBehaviour {
 			  BossPresent = false;
 			else
 			  BossPresent = true;
+		}
+	}
+
+	public void PauseGame ()
+	{
+		if(!Paused)
+		{
+			Paused = true;
+			GamePauseCanvas.SetActive(true);
+			Time.timeScale = 0;
+		} else {
+			Paused = false;
+		  GamePauseCanvas.SetActive(false);
+			Time.timeScale = 1;
 		}
 	}
 

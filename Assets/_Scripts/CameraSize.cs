@@ -7,6 +7,6 @@ public class CameraSize : MonoBehaviour
 
   void Awake()
   {
-    this.gameObject.GetComponent<Camera>().orthographicSize = (Screen.height / SpriteSize / 2.0f);
+    this.gameObject.GetComponent<Camera>().orthographicSize = ((Screen.height / SpriteSize) * 2.0f);
   }
 }
