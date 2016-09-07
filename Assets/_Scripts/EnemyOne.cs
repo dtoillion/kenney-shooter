@@ -33,7 +33,7 @@ public class EnemyOne : MonoBehaviour {
 		{
 			shoots = true;
 			burstRate = Random.Range(1f, 3f);
-			burstLength = Random.Range(1f, GameControl.control.CurrentLevel);
+			burstLength = Random.Range(1f, GameControl.control.CurrentLevel / 2);
 			fireRate = Random.Range(0.40f, 1f);
 		}
 	}
