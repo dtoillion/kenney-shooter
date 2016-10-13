@@ -3,21 +3,29 @@ using System.Collections;
 
 public class BGFader : MonoBehaviour {
 
-  public SpriteRenderer bgSprite;
   public float colorVal = 1f;
   public float min = 0.0f;
   public float max = 1f;
   public float duration = 3.0f;
-  private float startTime;
   public bool faded = false;
 
-  void Start ()
+  private float startTime;
+  private SpriteRenderer bgSprite;
+
+  void Awake ()
   {
+    bgSprite = GetComponent <SpriteRenderer>();
+  }
+
+  void OnEnable ()
+  {
+    faded = false;
     startTime = Time.time;
+    bgSprite.color = new Color(0, 0, 0, 0);
     Invoke("EndFade", duration);
   }
 
-	void Update ()
+  void Update ()
   {
     if(!faded)
     {

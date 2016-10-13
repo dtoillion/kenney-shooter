@@ -27,10 +27,8 @@ public class BGSwitcher : MonoBehaviour {
     if(CurrentLevelInt != bgImages.Length - 1)
     {
       CurrentLevelInt += 1;
-      Debug.Log("Increase Lewvel int");
     } else {
       CurrentLevelInt = 0;
-      Debug.Log("reset Lewvel int");
     }
     bgImages[CurrentLevelInt].SetActive(true);
   }
