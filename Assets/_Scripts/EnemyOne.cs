@@ -66,10 +66,10 @@ public class EnemyOne : MonoBehaviour {
         GameControl.control.score += (100 + GameControl.control.CurrentLevel * GameControl.control.kills);
 				Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 				ExplosionPrefab.transform.parent = null;
-				for (int i = 0; i < 1; i++)
-				{
-					Instantiate(Pickups[Random.Range(1, Pickups.Length)], transform.position, Quaternion.identity);
-				}
+				// for (int i = 0; i < 1; i++)
+				// {
+				// 	Instantiate(Pickups[Random.Range(1, Pickups.Length)], transform.position, Quaternion.identity);
+				// }
 				Destroy(gameObject, 0.1f);
     	}
     }
