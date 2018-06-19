@@ -282,14 +282,17 @@ TextureImporter:
     21300550: spaceStation_029.png
     21300552: spaceStation_030.png
     21300554: spaceStation_031.png
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -299,23 +302,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 8192
   textureSettings:
-    filterMode: 2
+    serializedVersion: 2
+    filterMode: 0
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -323,12 +325,50 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: spaceAstronauts_001.png
+    - serializedVersion: 2
+      name: spaceAstronauts_001.png
       rect:
         serializedVersion: 2
         x: 998
@@ -338,16 +378,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 22}
-        - {x: -17, y: 19}
-        - {x: -17, y: -16}
-        - {x: -11, y: -22}
-        - {x: 16, y: -22}
-        - {x: 17, y: -18}
-        - {x: 17, y: 17}
-        - {x: 10, y: 22}
-    - name: spaceAstronauts_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_002.png
       rect:
         serializedVersion: 2
         x: 919
@@ -357,14 +392,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 22}
-        - {x: -18.5, y: 20}
-        - {x: -18.5, y: -15}
-        - {x: -13.5, y: -22}
-        - {x: 18.5, y: -22}
-        - {x: 18.5, y: 22}
-    - name: spaceAstronauts_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_003.png
       rect:
         serializedVersion: 2
         x: 824
@@ -374,16 +406,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 22}
-        - {x: -25, y: 19}
-        - {x: -25, y: -17}
-        - {x: -21, y: -22}
-        - {x: 13, y: -22}
-        - {x: 25, y: -19}
-        - {x: 25, y: 1}
-        - {x: 14, y: 22}
-    - name: spaceAstronauts_004.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_004.png
       rect:
         serializedVersion: 2
         x: 392
@@ -393,16 +420,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 22}
-        - {x: -17, y: 19}
-        - {x: -17, y: -16}
-        - {x: -11, y: -22}
-        - {x: 16, y: -22}
-        - {x: 17, y: -18}
-        - {x: 17, y: 17}
-        - {x: 10, y: 22}
-    - name: spaceAstronauts_005.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_005.png
       rect:
         serializedVersion: 2
         x: 997
@@ -412,14 +434,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 22}
-        - {x: -18.5, y: 20}
-        - {x: -18.5, y: -15}
-        - {x: -13.5, y: -22}
-        - {x: 18.5, y: -22}
-        - {x: 18.5, y: 22}
-    - name: spaceAstronauts_006.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_006.png
       rect:
         serializedVersion: 2
         x: 824
@@ -429,16 +448,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 22}
-        - {x: -25, y: 19}
-        - {x: -25, y: -17}
-        - {x: -21, y: -22}
-        - {x: 13, y: -22}
-        - {x: 25, y: -19}
-        - {x: 25, y: 1}
-        - {x: 14, y: 22}
-    - name: spaceAstronauts_007.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_007.png
       rect:
         serializedVersion: 2
         x: 998
@@ -448,16 +462,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 22}
-        - {x: -17, y: 19}
-        - {x: -17, y: -16}
-        - {x: -11, y: -22}
-        - {x: 16, y: -22}
-        - {x: 17, y: -18}
-        - {x: 17, y: 17}
-        - {x: 10, y: 22}
-    - name: spaceAstronauts_008.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_008.png
       rect:
         serializedVersion: 2
         x: 952
@@ -467,14 +476,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 22}
-        - {x: -18.5, y: 20}
-        - {x: -18.5, y: -15}
-        - {x: -13.5, y: -22}
-        - {x: 18.5, y: -22}
-        - {x: 18.5, y: 22}
-    - name: spaceAstronauts_009.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_009.png
       rect:
         serializedVersion: 2
         x: 822
@@ -484,16 +490,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 22}
-        - {x: -25, y: 19}
-        - {x: -25, y: -17}
-        - {x: -21, y: -22}
-        - {x: 13, y: -22}
-        - {x: 25, y: -19}
-        - {x: 25, y: 1}
-        - {x: 14, y: 22}
-    - name: spaceAstronauts_010.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_010.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -504,7 +505,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceAstronauts_011.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_011.png
       rect:
         serializedVersion: 2
         x: 989
@@ -514,14 +518,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 22}
-        - {x: -18.5, y: 20}
-        - {x: -18.5, y: -13}
-        - {x: -9.5, y: -22}
-        - {x: 18.5, y: -22}
-        - {x: 18.5, y: 22}
-    - name: spaceAstronauts_012.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_012.png
       rect:
         serializedVersion: 2
         x: 822
@@ -531,16 +532,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 22}
-        - {x: -25, y: 21}
-        - {x: -25, y: -19}
-        - {x: -18, y: -22}
-        - {x: 21, y: -22}
-        - {x: 25, y: -19}
-        - {x: 25, y: 2}
-        - {x: 5, y: 22}
-    - name: spaceAstronauts_013.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_013.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -551,7 +547,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceAstronauts_014.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_014.png
       rect:
         serializedVersion: 2
         x: 991
@@ -561,14 +560,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 22}
-        - {x: -18.5, y: 20}
-        - {x: -18.5, y: -13}
-        - {x: -9.5, y: -22}
-        - {x: 18.5, y: -22}
-        - {x: 18.5, y: 22}
-    - name: spaceAstronauts_015.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_015.png
       rect:
         serializedVersion: 2
         x: 824
@@ -578,16 +574,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 22}
-        - {x: -25, y: 21}
-        - {x: -25, y: -19}
-        - {x: -18, y: -22}
-        - {x: 21, y: -22}
-        - {x: 25, y: -19}
-        - {x: 25, y: 2}
-        - {x: 5, y: 22}
-    - name: spaceAstronauts_016.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_016.png
       rect:
         serializedVersion: 2
         x: 998
@@ -598,7 +589,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceAstronauts_017.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_017.png
       rect:
         serializedVersion: 2
         x: 998
@@ -608,14 +602,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 22}
-        - {x: -18.5, y: 20}
-        - {x: -18.5, y: -13}
-        - {x: -9.5, y: -22}
-        - {x: 18.5, y: -22}
-        - {x: 18.5, y: 22}
-    - name: spaceAstronauts_018.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceAstronauts_018.png
       rect:
         serializedVersion: 2
         x: 824
@@ -625,16 +616,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 22}
-        - {x: -25, y: 21}
-        - {x: -25, y: -19}
-        - {x: -18, y: -22}
-        - {x: 21, y: -22}
-        - {x: 25, y: -19}
-        - {x: 25, y: 2}
-        - {x: 5, y: 22}
-    - name: spaceBuilding_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_001.png
       rect:
         serializedVersion: 2
         x: 917
@@ -644,14 +630,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 21}
-        - {x: -21, y: -20}
-        - {x: -20, y: -21}
-        - {x: 19, y: -21}
-        - {x: 21, y: -19}
-        - {x: 21, y: 21}
-    - name: spaceBuilding_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_002.png
       rect:
         serializedVersion: 2
         x: 909
@@ -661,14 +644,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 42}
-        - {x: -21, y: -41}
-        - {x: -20, y: -42}
-        - {x: 20, y: -42}
-        - {x: 21, y: -41}
-        - {x: 21, y: 42}
-    - name: spaceBuilding_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_003.png
       rect:
         serializedVersion: 2
         x: 872
@@ -678,16 +658,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 23}
-        - {x: -23, y: 22}
-        - {x: -23, y: -21}
-        - {x: -17, y: -23}
-        - {x: 20, y: -23}
-        - {x: 23, y: -19}
-        - {x: 23, y: 21}
-        - {x: 21, y: 23}
-    - name: spaceBuilding_004.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_004.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -698,7 +673,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceBuilding_005.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_005.png
       rect:
         serializedVersion: 2
         x: 917
@@ -708,14 +686,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 42}
-        - {x: -21, y: -41}
-        - {x: -20, y: -42}
-        - {x: 20, y: -42}
-        - {x: 21, y: -41}
-        - {x: 21, y: 42}
-    - name: spaceBuilding_006.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_006.png
       rect:
         serializedVersion: 2
         x: 872
@@ -725,16 +700,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 23}
-        - {x: -23, y: 22}
-        - {x: -23, y: -21}
-        - {x: -17, y: -23}
-        - {x: 20, y: -23}
-        - {x: 23, y: -19}
-        - {x: 23, y: 21}
-        - {x: 21, y: 23}
-    - name: spaceBuilding_007.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_007.png
       rect:
         serializedVersion: 2
         x: 667
@@ -744,16 +714,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -40, y: 42}
-        - {x: -42, y: 40}
-        - {x: -42, y: -41}
-        - {x: -41, y: -42}
-        - {x: 40, y: -42}
-        - {x: 42, y: -40}
-        - {x: 42, y: 40}
-        - {x: 40, y: 42}
-    - name: spaceBuilding_008.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_008.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -764,7 +729,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceBuilding_009.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_009.png
       rect:
         serializedVersion: 2
         x: 674
@@ -774,16 +742,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -40, y: 42}
-        - {x: -42, y: 40}
-        - {x: -42, y: -41}
-        - {x: -41, y: -42}
-        - {x: 40, y: -42}
-        - {x: 42, y: -40}
-        - {x: 42, y: 40}
-        - {x: 40, y: 42}
-    - name: spaceBuilding_010.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_010.png
       rect:
         serializedVersion: 2
         x: 0
@@ -794,7 +757,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceBuilding_011.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_011.png
       rect:
         serializedVersion: 2
         x: 383
@@ -804,15 +770,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 25}
-        - {x: -21, y: 24}
-        - {x: -21, y: -25}
-        - {x: 20, y: -25}
-        - {x: 21, y: -24}
-        - {x: 21, y: 19}
-        - {x: 13, y: 25}
-    - name: spaceBuilding_012.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_012.png
       rect:
         serializedVersion: 2
         x: 802
@@ -822,16 +784,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15.5, y: 28.5}
-        - {x: -27.5, y: 6.5}
-        - {x: -27.5, y: -7.5}
-        - {x: -6.5, y: -28.5}
-        - {x: 7.5, y: -28.5}
-        - {x: 27.5, y: -13.5}
-        - {x: 27.5, y: 9.5}
-        - {x: 21.5, y: 28.5}
-    - name: spaceBuilding_013.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_013.png
       rect:
         serializedVersion: 2
         x: 818
@@ -841,16 +798,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -14, y: 27.5}
-        - {x: -27, y: 15.5}
-        - {x: -27, y: -9.5}
-        - {x: -16, y: -27.5}
-        - {x: 8, y: -27.5}
-        - {x: 27, y: -14.5}
-        - {x: 27, y: 8.5}
-        - {x: 19, y: 27.5}
-    - name: spaceBuilding_014.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_014.png
       rect:
         serializedVersion: 2
         x: 215
@@ -860,12 +812,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -84, y: 20}
-        - {x: -84, y: -20}
-        - {x: 84, y: -20}
-        - {x: 84, y: 20}
-    - name: spaceBuilding_015.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_015.png
       rect:
         serializedVersion: 2
         x: 276
@@ -875,12 +826,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -84, y: 20}
-        - {x: -84, y: -20}
-        - {x: 84, y: -20}
-        - {x: 84, y: 20}
-    - name: spaceBuilding_016.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_016.png
       rect:
         serializedVersion: 2
         x: 586
@@ -890,14 +840,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -44, y: 44}
-        - {x: -44, y: 17}
-        - {x: -7, y: -44}
-        - {x: 44, y: -44}
-        - {x: 44, y: -2}
-        - {x: 22, y: 44}
-    - name: spaceBuilding_017.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_017.png
       rect:
         serializedVersion: 2
         x: 758
@@ -907,20 +854,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 42.5}
-        - {x: -33, y: 42.5}
-        - {x: -33, y: 17.5}
-        - {x: -24, y: 9.5}
-        - {x: -4, y: 13.5}
-        - {x: 0, y: 14.5}
-        - {x: -31, y: -12.5}
-        - {x: -33, y: -42.5}
-        - {x: -15, y: -42.5}
-        - {x: -7, y: -37.5}
-        - {x: 33, y: -4.5}
-        - {x: 33, y: 26.5}
-    - name: spaceBuilding_018.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_018.png
       rect:
         serializedVersion: 2
         x: 905
@@ -930,14 +868,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 21}
-        - {x: -21, y: -20}
-        - {x: -20, y: -21}
-        - {x: 19, y: -21}
-        - {x: 21, y: -19}
-        - {x: 21, y: 21}
-    - name: spaceBuilding_019.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_019.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -948,7 +883,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceBuilding_020.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_020.png
       rect:
         serializedVersion: 2
         x: 802
@@ -958,16 +896,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -7.5, y: 27.5}
-        - {x: -27.5, y: 11.5}
-        - {x: -27.5, y: -6.5}
-        - {x: -6.5, y: -27.5}
-        - {x: 7.5, y: -27.5}
-        - {x: 27.5, y: -15.5}
-        - {x: 27.5, y: 8.5}
-        - {x: 17.5, y: 27.5}
-    - name: spaceBuilding_021.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_021.png
       rect:
         serializedVersion: 2
         x: 1066
@@ -978,7 +911,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceBuilding_022.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_022.png
       rect:
         serializedVersion: 2
         x: 1067
@@ -989,7 +925,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceBuilding_023.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_023.png
       rect:
         serializedVersion: 2
         x: 276
@@ -999,12 +938,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 82.5, y: 33}
-        - {x: -82.5, y: 33}
-        - {x: -82.5, y: -33}
-        - {x: 82.5, y: -33}
-    - name: spaceBuilding_024.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_024.png
       rect:
         serializedVersion: 2
         x: 276
@@ -1014,12 +952,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 82.5, y: 33}
-        - {x: -82.5, y: 33}
-        - {x: -82.5, y: -33}
-        - {x: 82.5, y: -33}
-    - name: spaceBuilding_025.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceBuilding_025.png
       rect:
         serializedVersion: 2
         x: 917
@@ -1029,14 +966,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 21}
-        - {x: -21, y: -20}
-        - {x: -20, y: -21}
-        - {x: 19, y: -21}
-        - {x: 21, y: -19}
-        - {x: 21, y: 21}
-    - name: spaceEffects_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_001.png
       rect:
         serializedVersion: 2
         x: 537
@@ -1047,7 +981,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_002.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_002.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1058,7 +995,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_003.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_003.png
       rect:
         serializedVersion: 2
         x: 377
@@ -1069,7 +1009,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_004.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_004.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1080,7 +1023,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_005.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_005.png
       rect:
         serializedVersion: 2
         x: 1125
@@ -1091,7 +1037,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_006.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_006.png
       rect:
         serializedVersion: 2
         x: 1113
@@ -1102,7 +1051,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_007.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_007.png
       rect:
         serializedVersion: 2
         x: 1113
@@ -1113,7 +1065,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_008.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_008.png
       rect:
         serializedVersion: 2
         x: 282
@@ -1124,7 +1079,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_009.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_009.png
       rect:
         serializedVersion: 2
         x: 477
@@ -1135,7 +1093,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_010.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_010.png
       rect:
         serializedVersion: 2
         x: 822
@@ -1146,7 +1107,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_011.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_011.png
       rect:
         serializedVersion: 2
         x: 1066
@@ -1157,7 +1121,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_012.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_012.png
       rect:
         serializedVersion: 2
         x: 919
@@ -1167,15 +1134,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -9, y: 16}
-        - {x: -16, y: 8}
-        - {x: -16, y: -16}
-        - {x: 12, y: -16}
-        - {x: 16, y: -13}
-        - {x: 16, y: 13}
-        - {x: 13, y: 16}
-    - name: spaceEffects_013.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_013.png
       rect:
         serializedVersion: 2
         x: 872
@@ -1185,15 +1148,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 18}
-        - {x: -18.5, y: -17}
-        - {x: -16.5, y: -18}
-        - {x: 17.5, y: -18}
-        - {x: 18.5, y: -17}
-        - {x: 18.5, y: 12}
-        - {x: 16.5, y: 18}
-    - name: spaceEffects_014.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_014.png
       rect:
         serializedVersion: 2
         x: 959
@@ -1203,14 +1162,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -17.5, y: 18}
-        - {x: -17.5, y: -18}
-        - {x: 7.5, y: -18}
-        - {x: 17.5, y: -12}
-        - {x: 17.5, y: 14}
-        - {x: 11.5, y: 18}
-    - name: spaceEffects_015.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_015.png
       rect:
         serializedVersion: 2
         x: 874
@@ -1220,17 +1176,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 25}
-        - {x: -22, y: 19}
-        - {x: -22, y: -17}
-        - {x: -20, y: -25}
-        - {x: 11, y: -25}
-        - {x: 14, y: -24}
-        - {x: 22, y: -20}
-        - {x: 22, y: 18}
-        - {x: 19, y: 25}
-    - name: spaceEffects_016.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_016.png
       rect:
         serializedVersion: 2
         x: 822
@@ -1240,16 +1190,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -22, y: 26}
-        - {x: -25, y: 17}
-        - {x: -25, y: -21}
-        - {x: -19, y: -26}
-        - {x: 19, y: -26}
-        - {x: 25, y: -18}
-        - {x: 25, y: 24}
-        - {x: 22, y: 26}
-    - name: spaceEffects_017.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_017.png
       rect:
         serializedVersion: 2
         x: 377
@@ -1260,7 +1205,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceEffects_018.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceEffects_018.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1271,7 +1219,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMeteors_001.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMeteors_001.png
       rect:
         serializedVersion: 2
         x: 0
@@ -1281,22 +1232,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 65.5, y: 89.5}
-        - {x: 18.5, y: 105.5}
-        - {x: -8.5, y: 105.5}
-        - {x: -69.5, y: 86.5}
-        - {x: -77.5, y: 80.5}
-        - {x: -103.5, y: 43.5}
-        - {x: -107.5, y: 38.5}
-        - {x: -107.5, y: -33.5}
-        - {x: -74.5, y: -104.5}
-        - {x: -55.5, y: -105.5}
-        - {x: 13.5, y: -105.5}
-        - {x: 66.5, y: -89.5}
-        - {x: 107.5, y: -43.5}
-        - {x: 107.5, y: 37.5}
-    - name: spaceMeteors_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMeteors_002.png
       rect:
         serializedVersion: 2
         x: 214
@@ -1306,21 +1246,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 87, y: -87}
-        - {x: 106, y: -35}
-        - {x: 106, y: 41}
-        - {x: 67, y: 95}
-        - {x: 20, y: 109}
-        - {x: -18, y: 109}
-        - {x: -74, y: 102}
-        - {x: -106, y: 46}
-        - {x: -106, y: -34}
-        - {x: -83, y: -76}
-        - {x: -69, y: -98}
-        - {x: -14, y: -109}
-        - {x: 51, y: -109}
-    - name: spaceMeteors_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMeteors_003.png
       rect:
         serializedVersion: 2
         x: 0
@@ -1330,23 +1260,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 75, y: 84.5}
-        - {x: 69, y: 94.5}
-        - {x: 13, y: 113.5}
-        - {x: -12, y: 113.5}
-        - {x: -55, y: 90.5}
-        - {x: -82, y: 66.5}
-        - {x: -107, y: 37.5}
-        - {x: -107, y: -4.5}
-        - {x: -105, y: -40.5}
-        - {x: -68, y: -96.5}
-        - {x: -8, y: -113.5}
-        - {x: 19, y: -113.5}
-        - {x: 70, y: -104.5}
-        - {x: 107, y: -45.5}
-        - {x: 107, y: 33.5}
-    - name: spaceMeteors_004.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMeteors_004.png
       rect:
         serializedVersion: 2
         x: 0
@@ -1356,23 +1274,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 108, y: 31.5}
-        - {x: 66, y: 91.5}
-        - {x: 15, y: 110.5}
-        - {x: -13, y: 110.5}
-        - {x: -62, y: 88.5}
-        - {x: -70, y: 80.5}
-        - {x: -110, y: 28.5}
-        - {x: -110, y: -41.5}
-        - {x: -75, y: -87.5}
-        - {x: -69, y: -94.5}
-        - {x: -20, y: -110.5}
-        - {x: 21, y: -110.5}
-        - {x: 58, y: -104.5}
-        - {x: 110, y: -47.5}
-        - {x: 110, y: 5.5}
-    - name: spaceMissiles_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_001.png
       rect:
         serializedVersion: 2
         x: 1093
@@ -1383,7 +1289,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_002.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_002.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1394,7 +1303,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_003.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_003.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -1405,7 +1317,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_004.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_004.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -1416,7 +1331,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_005.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_005.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -1427,7 +1345,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_006.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_006.png
       rect:
         serializedVersion: 2
         x: 1093
@@ -1438,7 +1359,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_007.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_007.png
       rect:
         serializedVersion: 2
         x: 1094
@@ -1449,7 +1373,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_008.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_008.png
       rect:
         serializedVersion: 2
         x: 1094
@@ -1460,7 +1387,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_009.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_009.png
       rect:
         serializedVersion: 2
         x: 1113
@@ -1471,7 +1401,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_010.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_010.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -1482,7 +1415,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_011.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_011.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1493,7 +1429,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_012.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_012.png
       rect:
         serializedVersion: 2
         x: 505
@@ -1504,7 +1443,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_013.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_013.png
       rect:
         serializedVersion: 2
         x: 521
@@ -1515,7 +1457,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_014.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_014.png
       rect:
         serializedVersion: 2
         x: 156
@@ -1526,7 +1471,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_015.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_015.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1537,7 +1485,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_016.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_016.png
       rect:
         serializedVersion: 2
         x: 574
@@ -1548,7 +1499,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_017.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_017.png
       rect:
         serializedVersion: 2
         x: 562
@@ -1559,7 +1513,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_018.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_018.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1570,7 +1527,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_019.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_019.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1581,7 +1541,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_020.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_020.png
       rect:
         serializedVersion: 2
         x: 1093
@@ -1592,7 +1555,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_021.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_021.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1603,7 +1569,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_022.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_022.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1614,7 +1583,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_023.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_023.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1625,7 +1597,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_024.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_024.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1636,7 +1611,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_025.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_025.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1647,7 +1625,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_026.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_026.png
       rect:
         serializedVersion: 2
         x: 549
@@ -1658,7 +1639,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_027.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_027.png
       rect:
         serializedVersion: 2
         x: 1124
@@ -1669,7 +1653,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_028.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_028.png
       rect:
         serializedVersion: 2
         x: 854
@@ -1680,7 +1667,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_029.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_029.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -1691,7 +1681,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_030.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_030.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -1702,7 +1695,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_031.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_031.png
       rect:
         serializedVersion: 2
         x: 1114
@@ -1713,7 +1709,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_032.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_032.png
       rect:
         serializedVersion: 2
         x: 324
@@ -1724,7 +1723,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_033.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_033.png
       rect:
         serializedVersion: 2
         x: 551
@@ -1735,7 +1737,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_034.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_034.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -1746,7 +1751,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_035.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_035.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1757,7 +1765,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_036.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_036.png
       rect:
         serializedVersion: 2
         x: 1114
@@ -1768,7 +1779,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_037.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_037.png
       rect:
         serializedVersion: 2
         x: 1113
@@ -1779,7 +1793,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_038.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_038.png
       rect:
         serializedVersion: 2
         x: 1113
@@ -1790,7 +1807,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_039.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_039.png
       rect:
         serializedVersion: 2
         x: 1113
@@ -1801,7 +1821,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceMissiles_040.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceMissiles_040.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -1812,7 +1835,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_001.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_001.png
       rect:
         serializedVersion: 2
         x: 959
@@ -1822,14 +1848,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.5, y: 35.5}
-        - {x: -19.5, y: -30.5}
-        - {x: -4.5, y: -35.5}
-        - {x: 19.5, y: -35.5}
-        - {x: 19.5, y: -16.5}
-        - {x: 3.5, y: 35.5}
-    - name: spaceParts_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_002.png
       rect:
         serializedVersion: 2
         x: 919
@@ -1839,15 +1862,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 35.5}
-        - {x: -20.5, y: 23.5}
-        - {x: -20.5, y: -35.5}
-        - {x: 7.5, y: -35.5}
-        - {x: 20.5, y: -13.5}
-        - {x: 20.5, y: 21.5}
-        - {x: 13.5, y: 35.5}
-    - name: spaceParts_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_003.png
       rect:
         serializedVersion: 2
         x: 961
@@ -1857,15 +1876,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 36}
-        - {x: -18.5, y: -30}
-        - {x: -6.5, y: -36}
-        - {x: 3.5, y: -36}
-        - {x: 18.5, y: -11}
-        - {x: 18.5, y: 10}
-        - {x: -1.5, y: 36}
-    - name: spaceParts_004.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_004.png
       rect:
         serializedVersion: 2
         x: 1066
@@ -1876,7 +1891,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_005.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_005.png
       rect:
         serializedVersion: 2
         x: 1028
@@ -1886,14 +1904,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 39.5}
-        - {x: -18, y: -39.5}
-        - {x: 2, y: -39.5}
-        - {x: 18, y: -29.5}
-        - {x: 18, y: 30.5}
-        - {x: -1, y: 39.5}
-    - name: spaceParts_006.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_006.png
       rect:
         serializedVersion: 2
         x: 909
@@ -1903,15 +1918,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9.5, y: 41}
-        - {x: -21.5, y: 41}
-        - {x: -21.5, y: -41}
-        - {x: 14.5, y: -41}
-        - {x: 21.5, y: -23}
-        - {x: 21.5, y: 11}
-        - {x: 13.5, y: 38}
-    - name: spaceParts_007.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_007.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -1921,14 +1932,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 43}
-        - {x: -16, y: -43}
-        - {x: 8, y: -43}
-        - {x: 16, y: -22}
-        - {x: 16, y: 0}
-        - {x: -2, y: 43}
-    - name: spaceParts_008.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_008.png
       rect:
         serializedVersion: 2
         x: 872
@@ -1938,15 +1946,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.5, y: 38.5}
-        - {x: -22.5, y: -3.5}
-        - {x: -22.5, y: -38.5}
-        - {x: -7.5, y: -38.5}
-        - {x: 22.5, y: -14.5}
-        - {x: 22.5, y: 14.5}
-        - {x: 6.5, y: 38.5}
-    - name: spaceParts_009.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_009.png
       rect:
         serializedVersion: 2
         x: 1028
@@ -1956,15 +1960,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 38}
-        - {x: -18, y: 9}
-        - {x: -18, y: -38}
-        - {x: 3, y: -38}
-        - {x: 18, y: -21}
-        - {x: 18, y: 23}
-        - {x: 13, y: 38}
-    - name: spaceParts_010.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_010.png
       rect:
         serializedVersion: 2
         x: 960
@@ -1974,16 +1974,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 4, y: 35.5}
-        - {x: -19, y: 35.5}
-        - {x: -19, y: -30.5}
-        - {x: -9, y: -35.5}
-        - {x: 12, y: -35.5}
-        - {x: 15, y: -32.5}
-        - {x: 19, y: -21.5}
-        - {x: 19, y: 5.5}
-    - name: spaceParts_011.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_011.png
       rect:
         serializedVersion: 2
         x: 960
@@ -1993,16 +1988,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 4, y: 35.5}
-        - {x: -19, y: 35.5}
-        - {x: -19, y: -30.5}
-        - {x: -9, y: -35.5}
-        - {x: 12, y: -35.5}
-        - {x: 15, y: -32.5}
-        - {x: 19, y: -21.5}
-        - {x: 19, y: 5.5}
-    - name: spaceParts_012.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_012.png
       rect:
         serializedVersion: 2
         x: 861
@@ -2012,16 +2002,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 35}
-        - {x: -22, y: 34}
-        - {x: -24, y: -1}
-        - {x: -24, y: -35}
-        - {x: -7, y: -35}
-        - {x: 24, y: -22}
-        - {x: 24, y: -5}
-        - {x: 1, y: 35}
-    - name: spaceParts_013.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_013.png
       rect:
         serializedVersion: 2
         x: 861
@@ -2031,16 +2016,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 35}
-        - {x: -22, y: 34}
-        - {x: -24, y: -1}
-        - {x: -24, y: -35}
-        - {x: -7, y: -35}
-        - {x: 24, y: -22}
-        - {x: 24, y: -5}
-        - {x: 1, y: 35}
-    - name: spaceParts_014.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_014.png
       rect:
         serializedVersion: 2
         x: 822
@@ -2050,15 +2030,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25, y: 33.5}
-        - {x: -25, y: 7.5}
-        - {x: -19, y: -31.5}
-        - {x: -15, y: -33.5}
-        - {x: 25, y: -33.5}
-        - {x: 25, y: -19.5}
-        - {x: -6, y: 33.5}
-    - name: spaceParts_015.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_015.png
       rect:
         serializedVersion: 2
         x: 822
@@ -2068,15 +2044,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25, y: 33.5}
-        - {x: -25, y: 7.5}
-        - {x: -19, y: -31.5}
-        - {x: -15, y: -33.5}
-        - {x: 25, y: -33.5}
-        - {x: 25, y: -19.5}
-        - {x: -6, y: 33.5}
-    - name: spaceParts_016.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_016.png
       rect:
         serializedVersion: 2
         x: 959
@@ -2086,14 +2058,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.5, y: 35.5}
-        - {x: -19.5, y: -30.5}
-        - {x: -4.5, y: -35.5}
-        - {x: 19.5, y: -35.5}
-        - {x: 19.5, y: -16.5}
-        - {x: 3.5, y: 35.5}
-    - name: spaceParts_017.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_017.png
       rect:
         serializedVersion: 2
         x: 387
@@ -2103,14 +2072,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.5, y: 35.5}
-        - {x: -19.5, y: -30.5}
-        - {x: -4.5, y: -35.5}
-        - {x: 19.5, y: -35.5}
-        - {x: 19.5, y: -16.5}
-        - {x: 3.5, y: 35.5}
-    - name: spaceParts_018.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_018.png
       rect:
         serializedVersion: 2
         x: 919
@@ -2120,15 +2086,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 35.5}
-        - {x: -20.5, y: 23.5}
-        - {x: -20.5, y: -35.5}
-        - {x: 7.5, y: -35.5}
-        - {x: 20.5, y: -13.5}
-        - {x: 20.5, y: 21.5}
-        - {x: 13.5, y: 35.5}
-    - name: spaceParts_019.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_019.png
       rect:
         serializedVersion: 2
         x: 919
@@ -2138,15 +2100,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 35.5}
-        - {x: -20.5, y: 23.5}
-        - {x: -20.5, y: -35.5}
-        - {x: 7.5, y: -35.5}
-        - {x: 20.5, y: -13.5}
-        - {x: 20.5, y: 21.5}
-        - {x: 13.5, y: 35.5}
-    - name: spaceParts_020.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_020.png
       rect:
         serializedVersion: 2
         x: 992
@@ -2156,15 +2114,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 36}
-        - {x: -18.5, y: -30}
-        - {x: -6.5, y: -36}
-        - {x: 3.5, y: -36}
-        - {x: 18.5, y: -11}
-        - {x: 18.5, y: 10}
-        - {x: -1.5, y: 36}
-    - name: spaceParts_021.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_021.png
       rect:
         serializedVersion: 2
         x: 997
@@ -2174,15 +2128,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 36}
-        - {x: -18.5, y: -30}
-        - {x: -6.5, y: -36}
-        - {x: 3.5, y: -36}
-        - {x: 18.5, y: -11}
-        - {x: 18.5, y: 10}
-        - {x: -1.5, y: 36}
-    - name: spaceParts_022.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_022.png
       rect:
         serializedVersion: 2
         x: 1066
@@ -2193,7 +2143,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_023.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_023.png
       rect:
         serializedVersion: 2
         x: 1069
@@ -2204,7 +2157,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_024.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_024.png
       rect:
         serializedVersion: 2
         x: 998
@@ -2214,14 +2170,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 39.5}
-        - {x: -18, y: -39.5}
-        - {x: 2, y: -39.5}
-        - {x: 18, y: -29.5}
-        - {x: 18, y: 30.5}
-        - {x: -1, y: 39.5}
-    - name: spaceParts_025.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_025.png
       rect:
         serializedVersion: 2
         x: 998
@@ -2231,14 +2184,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 39.5}
-        - {x: -18, y: -39.5}
-        - {x: 2, y: -39.5}
-        - {x: 18, y: -29.5}
-        - {x: 18, y: 30.5}
-        - {x: -1, y: 39.5}
-    - name: spaceParts_026.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_026.png
       rect:
         serializedVersion: 2
         x: 909
@@ -2248,15 +2198,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9.5, y: 41}
-        - {x: -21.5, y: 41}
-        - {x: -21.5, y: -41}
-        - {x: 14.5, y: -41}
-        - {x: 21.5, y: -23}
-        - {x: 21.5, y: 11}
-        - {x: 13.5, y: 38}
-    - name: spaceParts_027.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_027.png
       rect:
         serializedVersion: 2
         x: 918
@@ -2266,15 +2212,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 9.5, y: 41}
-        - {x: -21.5, y: 41}
-        - {x: -21.5, y: -41}
-        - {x: 14.5, y: -41}
-        - {x: 21.5, y: -23}
-        - {x: 21.5, y: 11}
-        - {x: 13.5, y: 38}
-    - name: spaceParts_028.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_028.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -2284,14 +2226,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 43}
-        - {x: -16, y: -43}
-        - {x: 8, y: -43}
-        - {x: 16, y: -22}
-        - {x: 16, y: 0}
-        - {x: -2, y: 43}
-    - name: spaceParts_029.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_029.png
       rect:
         serializedVersion: 2
         x: 872
@@ -2301,15 +2240,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.5, y: 38.5}
-        - {x: -22.5, y: -3.5}
-        - {x: -22.5, y: -38.5}
-        - {x: -7.5, y: -38.5}
-        - {x: 22.5, y: -14.5}
-        - {x: 22.5, y: 14.5}
-        - {x: 6.5, y: 38.5}
-    - name: spaceParts_030.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_030.png
       rect:
         serializedVersion: 2
         x: 874
@@ -2319,15 +2254,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.5, y: 38.5}
-        - {x: -22.5, y: -3.5}
-        - {x: -22.5, y: -38.5}
-        - {x: -7.5, y: -38.5}
-        - {x: 22.5, y: -14.5}
-        - {x: 22.5, y: 14.5}
-        - {x: 6.5, y: 38.5}
-    - name: spaceParts_031.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_031.png
       rect:
         serializedVersion: 2
         x: 998
@@ -2337,15 +2268,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 38}
-        - {x: -18, y: 9}
-        - {x: -18, y: -38}
-        - {x: 3, y: -38}
-        - {x: 18, y: -21}
-        - {x: 18, y: 23}
-        - {x: 13, y: 38}
-    - name: spaceParts_032.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_032.png
       rect:
         serializedVersion: 2
         x: 998
@@ -2355,15 +2282,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 38}
-        - {x: -18, y: 9}
-        - {x: -18, y: -38}
-        - {x: 3, y: -38}
-        - {x: 18, y: -21}
-        - {x: 18, y: 23}
-        - {x: 13, y: 38}
-    - name: spaceParts_033.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_033.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -2373,14 +2296,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 43}
-        - {x: -16, y: -43}
-        - {x: 8, y: -43}
-        - {x: 16, y: -22}
-        - {x: 16, y: 0}
-        - {x: -2, y: 43}
-    - name: spaceParts_034.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_034.png
       rect:
         serializedVersion: 2
         x: 992
@@ -2390,15 +2310,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10.5, y: 28}
-        - {x: -10.5, y: 28}
-        - {x: -18.5, y: 14}
-        - {x: -18.5, y: -28}
-        - {x: 18.5, y: -28}
-        - {x: 18.5, y: 12}
-        - {x: 17.5, y: 22}
-    - name: spaceParts_035.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_035.png
       rect:
         serializedVersion: 2
         x: 1035
@@ -2408,14 +2324,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 31.5}
-        - {x: -16, y: -31.5}
-        - {x: 14, y: -31.5}
-        - {x: 16, y: -16.5}
-        - {x: 16, y: 22.5}
-        - {x: 5, y: 31.5}
-    - name: spaceParts_036.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_036.png
       rect:
         serializedVersion: 2
         x: 871
@@ -2425,16 +2338,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 31}
-        - {x: -24, y: 12}
-        - {x: -24, y: -11}
-        - {x: -16, y: -31}
-        - {x: 18, y: -31}
-        - {x: 24, y: -16}
-        - {x: 24, y: 16}
-        - {x: 16, y: 31}
-    - name: spaceParts_037.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_037.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -2444,16 +2352,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.5, y: 35.5}
-        - {x: -17.5, y: 15.5}
-        - {x: -17.5, y: -21.5}
-        - {x: -13.5, y: -35.5}
-        - {x: 16.5, y: -35.5}
-        - {x: 17.5, y: -28.5}
-        - {x: 17.5, y: 20.5}
-        - {x: 8.5, y: 35.5}
-    - name: spaceParts_038.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_038.png
       rect:
         serializedVersion: 2
         x: 952
@@ -2463,16 +2366,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -12, y: 28.5}
-        - {x: -20, y: 10.5}
-        - {x: -20, y: -19.5}
-        - {x: -17, y: -28.5}
-        - {x: 17, y: -28.5}
-        - {x: 20, y: -25.5}
-        - {x: 20, y: 5.5}
-        - {x: 12, y: 28.5}
-    - name: spaceParts_039.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_039.png
       rect:
         serializedVersion: 2
         x: 960
@@ -2482,16 +2380,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 31.5}
-        - {x: -19, y: 23.5}
-        - {x: -19, y: -31.5}
-        - {x: 9, y: -31.5}
-        - {x: 18, y: -29.5}
-        - {x: 19, y: -28.5}
-        - {x: 19, y: 23.5}
-        - {x: 13, y: 31.5}
-    - name: spaceParts_040.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_040.png
       rect:
         serializedVersion: 2
         x: 874
@@ -2501,16 +2394,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.5, y: 33}
-        - {x: -22.5, y: 4}
-        - {x: -22.5, y: -31}
-        - {x: -17.5, y: -33}
-        - {x: 19.5, y: -33}
-        - {x: 22.5, y: -29}
-        - {x: 22.5, y: -5}
-        - {x: 16.5, y: 33}
-    - name: spaceParts_041.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_041.png
       rect:
         serializedVersion: 2
         x: 802
@@ -2520,15 +2408,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.5, y: 33}
-        - {x: -29.5, y: 10}
-        - {x: -29.5, y: -28}
-        - {x: -23.5, y: -33}
-        - {x: 29.5, y: -33}
-        - {x: 29.5, y: 27}
-        - {x: 16.5, y: 33}
-    - name: spaceParts_042.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_042.png
       rect:
         serializedVersion: 2
         x: 822
@@ -2538,18 +2422,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 18, y: 27.5}
-        - {x: 6, y: 33.5}
-        - {x: -12, y: 33.5}
-        - {x: -20, y: 25.5}
-        - {x: -26, y: -2.5}
-        - {x: -26, y: -33.5}
-        - {x: 18, y: -33.5}
-        - {x: 26, y: -30.5}
-        - {x: 26, y: -5.5}
-        - {x: 25, y: 5.5}
-    - name: spaceParts_043.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_043.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -2559,12 +2436,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -17, y: 33}
-        - {x: -17, y: -33}
-        - {x: 17, y: -33}
-        - {x: 17, y: 33}
-    - name: spaceParts_044.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_044.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -2575,7 +2451,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_045.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_045.png
       rect:
         serializedVersion: 2
         x: 874
@@ -2585,14 +2464,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21.5, y: 31}
-        - {x: -21.5, y: -19}
-        - {x: -20.5, y: -31}
-        - {x: 15.5, y: -31}
-        - {x: 21.5, y: -18}
-        - {x: 21.5, y: 31}
-    - name: spaceParts_046.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_046.png
       rect:
         serializedVersion: 2
         x: 952
@@ -2602,15 +2478,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 33}
-        - {x: -20, y: -11}
-        - {x: -16, y: -32}
-        - {x: -13, y: -33}
-        - {x: 12, y: -33}
-        - {x: 20, y: -12}
-        - {x: 20, y: 33}
-    - name: spaceParts_047.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_047.png
       rect:
         serializedVersion: 2
         x: 991
@@ -2620,15 +2492,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10.5, y: 28}
-        - {x: -10.5, y: 28}
-        - {x: -18.5, y: 14}
-        - {x: -18.5, y: -28}
-        - {x: 18.5, y: -28}
-        - {x: 18.5, y: 12}
-        - {x: 17.5, y: 22}
-    - name: spaceParts_048.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_048.png
       rect:
         serializedVersion: 2
         x: 999
@@ -2638,14 +2506,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 31.5}
-        - {x: -16, y: -31.5}
-        - {x: 14, y: -31.5}
-        - {x: 16, y: -16.5}
-        - {x: 16, y: 22.5}
-        - {x: 5, y: 31.5}
-    - name: spaceParts_049.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_049.png
       rect:
         serializedVersion: 2
         x: 861
@@ -2655,16 +2520,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 31}
-        - {x: -24, y: 12}
-        - {x: -24, y: -11}
-        - {x: -16, y: -31}
-        - {x: 18, y: -31}
-        - {x: 24, y: -16}
-        - {x: 24, y: 16}
-        - {x: 16, y: 31}
-    - name: spaceParts_050.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_050.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -2674,16 +2534,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.5, y: 35.5}
-        - {x: -17.5, y: 15.5}
-        - {x: -17.5, y: -21.5}
-        - {x: -13.5, y: -35.5}
-        - {x: 16.5, y: -35.5}
-        - {x: 17.5, y: -28.5}
-        - {x: 17.5, y: 20.5}
-        - {x: 8.5, y: 35.5}
-    - name: spaceParts_051.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_051.png
       rect:
         serializedVersion: 2
         x: 958
@@ -2693,16 +2548,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -12, y: 28.5}
-        - {x: -20, y: 10.5}
-        - {x: -20, y: -19.5}
-        - {x: -17, y: -28.5}
-        - {x: 17, y: -28.5}
-        - {x: 20, y: -25.5}
-        - {x: 20, y: 5.5}
-        - {x: 12, y: 28.5}
-    - name: spaceParts_052.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_052.png
       rect:
         serializedVersion: 2
         x: 961
@@ -2712,16 +2562,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 31.5}
-        - {x: -19, y: 23.5}
-        - {x: -19, y: -31.5}
-        - {x: 9, y: -31.5}
-        - {x: 18, y: -29.5}
-        - {x: 19, y: -28.5}
-        - {x: 19, y: 23.5}
-        - {x: 13, y: 31.5}
-    - name: spaceParts_053.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_053.png
       rect:
         serializedVersion: 2
         x: 872
@@ -2731,16 +2576,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.5, y: 33}
-        - {x: -22.5, y: 4}
-        - {x: -22.5, y: -31}
-        - {x: -17.5, y: -33}
-        - {x: 19.5, y: -33}
-        - {x: 22.5, y: -29}
-        - {x: 22.5, y: -5}
-        - {x: 16.5, y: 33}
-    - name: spaceParts_054.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_054.png
       rect:
         serializedVersion: 2
         x: 857
@@ -2751,7 +2591,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_055.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_055.png
       rect:
         serializedVersion: 2
         x: 802
@@ -2761,15 +2604,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.5, y: 33}
-        - {x: -29.5, y: 10}
-        - {x: -29.5, y: -28}
-        - {x: -23.5, y: -33}
-        - {x: 29.5, y: -33}
-        - {x: 29.5, y: 27}
-        - {x: 16.5, y: 33}
-    - name: spaceParts_056.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_056.png
       rect:
         serializedVersion: 2
         x: 819
@@ -2779,18 +2618,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 18, y: 27.5}
-        - {x: 6, y: 33.5}
-        - {x: -12, y: 33.5}
-        - {x: -20, y: 25.5}
-        - {x: -26, y: -2.5}
-        - {x: -26, y: -33.5}
-        - {x: 18, y: -33.5}
-        - {x: 26, y: -30.5}
-        - {x: 26, y: -5.5}
-        - {x: 25, y: 5.5}
-    - name: spaceParts_057.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_057.png
       rect:
         serializedVersion: 2
         x: 652
@@ -2801,7 +2633,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_058.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_058.png
       rect:
         serializedVersion: 2
         x: 548
@@ -2812,7 +2647,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_059.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_059.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -2823,7 +2661,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_060.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_060.png
       rect:
         serializedVersion: 2
         x: 742
@@ -2834,7 +2675,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_061.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_061.png
       rect:
         serializedVersion: 2
         x: 1094
@@ -2845,7 +2689,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_062.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_062.png
       rect:
         serializedVersion: 2
         x: 857
@@ -2856,7 +2703,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_063.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_063.png
       rect:
         serializedVersion: 2
         x: 377
@@ -2867,7 +2717,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_064.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_064.png
       rect:
         serializedVersion: 2
         x: 905
@@ -2878,7 +2731,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_065.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_065.png
       rect:
         serializedVersion: 2
         x: 1068
@@ -2889,7 +2745,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_066.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_066.png
       rect:
         serializedVersion: 2
         x: 1068
@@ -2900,7 +2759,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_067.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_067.png
       rect:
         serializedVersion: 2
         x: 1090
@@ -2911,7 +2773,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_068.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_068.png
       rect:
         serializedVersion: 2
         x: 1091
@@ -2922,7 +2787,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_069.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_069.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -2933,7 +2801,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_070.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_070.png
       rect:
         serializedVersion: 2
         x: 1095
@@ -2944,7 +2815,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_071.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_071.png
       rect:
         serializedVersion: 2
         x: 1123
@@ -2955,7 +2829,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_072.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_072.png
       rect:
         serializedVersion: 2
         x: 1124
@@ -2966,7 +2843,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_073.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_073.png
       rect:
         serializedVersion: 2
         x: 1124
@@ -2977,7 +2857,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_074.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_074.png
       rect:
         serializedVersion: 2
         x: 1116
@@ -2988,7 +2871,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_075.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_075.png
       rect:
         serializedVersion: 2
         x: 1124
@@ -2999,7 +2885,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_076.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_076.png
       rect:
         serializedVersion: 2
         x: 1124
@@ -3010,7 +2899,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_077.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_077.png
       rect:
         serializedVersion: 2
         x: 1114
@@ -3021,7 +2913,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_078.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_078.png
       rect:
         serializedVersion: 2
         x: 1124
@@ -3032,7 +2927,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_079.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_079.png
       rect:
         serializedVersion: 2
         x: 1065
@@ -3043,7 +2941,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_080.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_080.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -3054,7 +2955,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_081.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_081.png
       rect:
         serializedVersion: 2
         x: 410
@@ -3065,7 +2969,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_082.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_082.png
       rect:
         serializedVersion: 2
         x: 1066
@@ -3076,7 +2983,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_083.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_083.png
       rect:
         serializedVersion: 2
         x: 387
@@ -3087,7 +2997,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_084.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_084.png
       rect:
         serializedVersion: 2
         x: 303
@@ -3098,7 +3011,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_085.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_085.png
       rect:
         serializedVersion: 2
         x: 1094
@@ -3109,7 +3025,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_086.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_086.png
       rect:
         serializedVersion: 2
         x: 1064
@@ -3120,7 +3039,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_087.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_087.png
       rect:
         serializedVersion: 2
         x: 441
@@ -3131,7 +3053,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_088.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_088.png
       rect:
         serializedVersion: 2
         x: 172
@@ -3142,7 +3067,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_089.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_089.png
       rect:
         serializedVersion: 2
         x: 102
@@ -3153,7 +3081,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_090.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_090.png
       rect:
         serializedVersion: 2
         x: 655
@@ -3164,7 +3095,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_091.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_091.png
       rect:
         serializedVersion: 2
         x: 282
@@ -3175,7 +3109,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_092.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_092.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -3186,7 +3123,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_093.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_093.png
       rect:
         serializedVersion: 2
         x: 1111
@@ -3197,7 +3137,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_094.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_094.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -3208,7 +3151,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_095.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_095.png
       rect:
         serializedVersion: 2
         x: 1110
@@ -3219,7 +3165,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceParts_096.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_096.png
       rect:
         serializedVersion: 2
         x: 959
@@ -3229,16 +3178,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 4, y: 35.5}
-        - {x: -19, y: 35.5}
-        - {x: -19, y: -30.5}
-        - {x: -9, y: -35.5}
-        - {x: 12, y: -35.5}
-        - {x: 15, y: -32.5}
-        - {x: 19, y: -21.5}
-        - {x: 19, y: 5.5}
-    - name: spaceParts_097.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_097.png
       rect:
         serializedVersion: 2
         x: 857
@@ -3248,16 +3192,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 35}
-        - {x: -22, y: 34}
-        - {x: -24, y: -1}
-        - {x: -24, y: -35}
-        - {x: -7, y: -35}
-        - {x: 24, y: -22}
-        - {x: 24, y: -5}
-        - {x: 1, y: 35}
-    - name: spaceParts_098.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceParts_098.png
       rect:
         serializedVersion: 2
         x: 822
@@ -3267,15 +3206,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25, y: 33.5}
-        - {x: -25, y: 7.5}
-        - {x: -19, y: -31.5}
-        - {x: -15, y: -33.5}
-        - {x: 25, y: -33.5}
-        - {x: 25, y: -19.5}
-        - {x: -6, y: 33.5}
-    - name: spaceRocketParts_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_001.png
       rect:
         serializedVersion: 2
         x: 756
@@ -3285,16 +3220,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -9, y: 39}
-        - {x: -32, y: 16}
-        - {x: -34, y: -2}
-        - {x: -34, y: -39}
-        - {x: 34, y: -39}
-        - {x: 34, y: -5}
-        - {x: 32, y: 16}
-        - {x: 9, y: 39}
-    - name: spaceRocketParts_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_002.png
       rect:
         serializedVersion: 2
         x: 754
@@ -3304,16 +3234,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -6, y: 39}
-        - {x: -22, y: 26}
-        - {x: -33, y: -15}
-        - {x: -34, y: -22}
-        - {x: -34, y: -39}
-        - {x: 34, y: -39}
-        - {x: 34, y: -19}
-        - {x: 14, y: 39}
-    - name: spaceRocketParts_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_003.png
       rect:
         serializedVersion: 2
         x: 586
@@ -3324,7 +3249,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceRocketParts_004.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_004.png
       rect:
         serializedVersion: 2
         x: 754
@@ -3334,16 +3262,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 35.5}
-        - {x: -31, y: 21.5}
-        - {x: -34, y: -1.5}
-        - {x: -34, y: -35.5}
-        - {x: 34, y: -35.5}
-        - {x: 34, y: -6.5}
-        - {x: 31, y: 15.5}
-        - {x: 15, y: 35.5}
-    - name: spaceRocketParts_005.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_005.png
       rect:
         serializedVersion: 2
         x: 686
@@ -3353,16 +3276,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 20}
-        - {x: -34, y: 11}
-        - {x: -26, y: -17}
-        - {x: -20, y: -20}
-        - {x: 20, y: -20}
-        - {x: 32, y: -1}
-        - {x: 34, y: 9}
-        - {x: 34, y: 20}
-    - name: spaceRocketParts_006.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_006.png
       rect:
         serializedVersion: 2
         x: 686
@@ -3372,19 +3290,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 23, y: 18.5}
-        - {x: 19, y: 25.5}
-        - {x: 10, y: 36.5}
-        - {x: -8, y: 36.5}
-        - {x: -22, y: 22.5}
-        - {x: -23, y: 17.5}
-        - {x: -34, y: -16.5}
-        - {x: -34, y: -36.5}
-        - {x: 34, y: -36.5}
-        - {x: 34, y: -17.5}
-        - {x: 31, y: -14.5}
-    - name: spaceRocketParts_007.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_007.png
       rect:
         serializedVersion: 2
         x: 686
@@ -3394,17 +3304,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 36.5}
-        - {x: -12, y: 36.5}
-        - {x: -22, y: 22.5}
-        - {x: -23, y: 17.5}
-        - {x: -34, y: -16.5}
-        - {x: -34, y: -36.5}
-        - {x: 34, y: -36.5}
-        - {x: 34, y: -4.5}
-        - {x: 24, y: 28.5}
-    - name: spaceRocketParts_008.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_008.png
       rect:
         serializedVersion: 2
         x: 686
@@ -3414,13 +3318,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 20.5}
-        - {x: -34, y: -18.5}
-        - {x: -32, y: -20.5}
-        - {x: 34, y: -20.5}
-        - {x: 34, y: 20.5}
-    - name: spaceRocketParts_009.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_009.png
       rect:
         serializedVersion: 2
         x: 686
@@ -3430,12 +3332,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 32}
-        - {x: -34, y: -32}
-        - {x: 34, y: -32}
-        - {x: 34, y: 32}
-    - name: spaceRocketParts_010.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_010.png
       rect:
         serializedVersion: 2
         x: 686
@@ -3445,12 +3346,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 32}
-        - {x: -34, y: -32}
-        - {x: 34, y: -32}
-        - {x: 34, y: 32}
-    - name: spaceRocketParts_011.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_011.png
       rect:
         serializedVersion: 2
         x: 667
@@ -3460,16 +3360,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -40, y: 24.5}
-        - {x: -41, y: 19.5}
-        - {x: -41, y: 3.5}
-        - {x: -27, y: -24.5}
-        - {x: 28, y: -24.5}
-        - {x: 41, y: 0.5}
-        - {x: 41, y: 18.5}
-        - {x: 39, y: 24.5}
-    - name: spaceRocketParts_012.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_012.png
       rect:
         serializedVersion: 2
         x: 872
@@ -3479,16 +3374,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -15, y: 22}
-        - {x: -22, y: 13}
-        - {x: -22, y: -21}
-        - {x: -19, y: -22}
-        - {x: 20, y: -22}
-        - {x: 22, y: -16}
-        - {x: 22, y: 19}
-        - {x: 18, y: 22}
-    - name: spaceRocketParts_013.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_013.png
       rect:
         serializedVersion: 2
         x: 919
@@ -3498,12 +3388,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 18}
-        - {x: -19, y: -18}
-        - {x: 19, y: -18}
-        - {x: 19, y: 18}
-    - name: spaceRocketParts_014.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_014.png
       rect:
         serializedVersion: 2
         x: 802
@@ -3513,14 +3402,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29.5, y: 26}
-        - {x: -29.5, y: -23}
-        - {x: -28.5, y: -26}
-        - {x: 29.5, y: -26}
-        - {x: 29.5, y: 23}
-        - {x: 27.5, y: 26}
-    - name: spaceRocketParts_015.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_015.png
       rect:
         serializedVersion: 2
         x: 960
@@ -3531,7 +3417,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceRocketParts_016.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_016.png
       rect:
         serializedVersion: 2
         x: 754
@@ -3541,12 +3430,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 32}
-        - {x: -34, y: -32}
-        - {x: 34, y: -32}
-        - {x: 34, y: 32}
-    - name: spaceRocketParts_017.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_017.png
       rect:
         serializedVersion: 2
         x: 754
@@ -3556,12 +3444,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 32}
-        - {x: -34, y: -32}
-        - {x: 34, y: -32}
-        - {x: 34, y: 32}
-    - name: spaceRocketParts_018.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_018.png
       rect:
         serializedVersion: 2
         x: 756
@@ -3571,12 +3458,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 32}
-        - {x: -34, y: -32}
-        - {x: 34, y: -32}
-        - {x: 34, y: 32}
-    - name: spaceRocketParts_019.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_019.png
       rect:
         serializedVersion: 2
         x: 754
@@ -3586,12 +3472,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 32}
-        - {x: -34, y: -32}
-        - {x: 34, y: -32}
-        - {x: 34, y: 32}
-    - name: spaceRocketParts_020.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_020.png
       rect:
         serializedVersion: 2
         x: 1066
@@ -3602,7 +3487,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceRocketParts_021.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_021.png
       rect:
         serializedVersion: 2
         x: 1065
@@ -3613,7 +3501,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceRocketParts_022.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_022.png
       rect:
         serializedVersion: 2
         x: 1029
@@ -3623,18 +3514,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 13, y: 80}
-        - {x: -7, y: 80}
-        - {x: -12, y: 74}
-        - {x: -16, y: 57}
-        - {x: -18, y: 8}
-        - {x: -18, y: -78}
-        - {x: -16, y: -80}
-        - {x: 18, y: -80}
-        - {x: 18, y: 36}
-        - {x: 16, y: 79}
-    - name: spaceRocketParts_023.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_023.png
       rect:
         serializedVersion: 2
         x: 959
@@ -3644,17 +3528,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10.5, y: 73}
-        - {x: -7.5, y: 73}
-        - {x: -19.5, y: 48}
-        - {x: -19.5, y: -68}
-        - {x: -15.5, y: -73}
-        - {x: 14.5, y: -73}
-        - {x: 19.5, y: -68}
-        - {x: 19.5, y: 29}
-        - {x: 12.5, y: 72}
-    - name: spaceRocketParts_024.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_024.png
       rect:
         serializedVersion: 2
         x: 918
@@ -3664,16 +3542,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -12.5, y: 40}
-        - {x: -20.5, y: 40}
-        - {x: -20.5, y: -37}
-        - {x: -12.5, y: -40}
-        - {x: 14.5, y: -40}
-        - {x: 20.5, y: -38}
-        - {x: 20.5, y: -6}
-        - {x: 8.5, y: 26}
-    - name: spaceRocketParts_025.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_025.png
       rect:
         serializedVersion: 2
         x: 951
@@ -3683,14 +3556,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 48.5}
-        - {x: -20, y: -48.5}
-        - {x: -15, y: -48.5}
-        - {x: 20, y: -32.5}
-        - {x: 20, y: -11.5}
-        - {x: -6, y: 48.5}
-    - name: spaceRocketParts_026.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_026.png
       rect:
         serializedVersion: 2
         x: 998
@@ -3700,14 +3570,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 44.5}
-        - {x: -18.5, y: -13.5}
-        - {x: 12.5, y: -44.5}
-        - {x: 18.5, y: -44.5}
-        - {x: 18.5, y: -3.5}
-        - {x: -12.5, y: 44.5}
-    - name: spaceRocketParts_027.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_027.png
       rect:
         serializedVersion: 2
         x: 872
@@ -3717,15 +3584,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19.5, y: 42.5}
-        - {x: -23.5, y: 42.5}
-        - {x: -23.5, y: -42.5}
-        - {x: -10.5, y: -42.5}
-        - {x: 23.5, y: -34.5}
-        - {x: 23.5, y: -22.5}
-        - {x: -5.5, y: 23.5}
-    - name: spaceRocketParts_028.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_028.png
       rect:
         serializedVersion: 2
         x: 1035
@@ -3736,7 +3599,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceRocketParts_029.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_029.png
       rect:
         serializedVersion: 2
         x: 754
@@ -3746,16 +3612,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10, y: 39}
-        - {x: -17, y: 39}
-        - {x: -31, y: 32}
-        - {x: -34, y: 6}
-        - {x: -34, y: -39}
-        - {x: 34, y: -39}
-        - {x: 34, y: -13}
-        - {x: 20, y: 36}
-    - name: spaceRocketParts_030.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_030.png
       rect:
         serializedVersion: 2
         x: 751
@@ -3765,16 +3626,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 39}
-        - {x: -33, y: 6}
-        - {x: -34, y: -6}
-        - {x: -34, y: -39}
-        - {x: 34, y: -39}
-        - {x: 34, y: -12}
-        - {x: 31, y: 15}
-        - {x: 9, y: 39}
-    - name: spaceRocketParts_031.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRocketParts_031.png
       rect:
         serializedVersion: 2
         x: 684
@@ -3784,12 +3640,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -37, y: 22.5}
-        - {x: -37, y: -22.5}
-        - {x: 37, y: -22.5}
-        - {x: 37, y: 22.5}
-    - name: spaceRockets_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRockets_001.png
       rect:
         serializedVersion: 2
         x: 562
@@ -3799,20 +3654,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 44, y: -10}
-        - {x: 36, y: 127}
-        - {x: 5, y: 187}
-        - {x: -7, y: 187}
-        - {x: -38, y: 170}
-        - {x: -58, y: 5}
-        - {x: -61, y: 0}
-        - {x: -61, y: -187}
-        - {x: 59, y: -187}
-        - {x: 61, y: -182}
-        - {x: 61, y: -20}
-        - {x: 49, y: -9}
-    - name: spaceRockets_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRockets_002.png
       rect:
         serializedVersion: 2
         x: 392
@@ -3822,18 +3668,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 37.5, y: 134.5}
-        - {x: 21.5, y: 154.5}
-        - {x: -33.5, y: 154.5}
-        - {x: -78.5, y: 23.5}
-        - {x: -78.5, y: -130.5}
-        - {x: -42.5, y: -154.5}
-        - {x: 21.5, y: -154.5}
-        - {x: 78.5, y: -105.5}
-        - {x: 78.5, y: -94.5}
-        - {x: 42.5, y: -39.5}
-    - name: spaceRockets_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRockets_003.png
       rect:
         serializedVersion: 2
         x: 684
@@ -3843,18 +3682,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 30, y: 126.5}
-        - {x: 10, y: 157.5}
-        - {x: -16, y: 157.5}
-        - {x: -59, y: 63.5}
-        - {x: -59, y: -108.5}
-        - {x: -37, y: -157.5}
-        - {x: 47, y: -157.5}
-        - {x: 59, y: -112.5}
-        - {x: 59, y: 12.5}
-        - {x: 57, y: 53.5}
-    - name: spaceRockets_004.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceRockets_004.png
       rect:
         serializedVersion: 2
         x: 426
@@ -3864,22 +3696,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 64, y: -167.5}
-        - {x: 68, y: -169.5}
-        - {x: 68, y: -117.5}
-        - {x: 67, y: -110.5}
-        - {x: 36, y: 172.5}
-        - {x: 18, y: 184.5}
-        - {x: -20, y: 184.5}
-        - {x: -42, y: 130.5}
-        - {x: -68, y: 43.5}
-        - {x: -68, y: -184.5}
-        - {x: 31, y: -184.5}
-        - {x: 34, y: -180.5}
-        - {x: 33, y: -168.5}
-        - {x: 36, y: -145.5}
-    - name: spaceShips_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_001.png
       rect:
         serializedVersion: 2
         x: 480
@@ -3889,16 +3710,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -46, y: 40}
-        - {x: -53, y: 9}
-        - {x: -53, y: -34}
-        - {x: -49, y: -40}
-        - {x: 49, y: -40}
-        - {x: 53, y: -38}
-        - {x: 53, y: 34}
-        - {x: 47, y: 40}
-    - name: spaceShips_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_002.png
       rect:
         serializedVersion: 2
         x: 276
@@ -3908,16 +3724,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -41.5, y: 37}
-        - {x: -50.5, y: 16}
-        - {x: -50.5, y: -16}
-        - {x: -36.5, y: -37}
-        - {x: 39.5, y: -37}
-        - {x: 50.5, y: -24}
-        - {x: 50.5, y: 21}
-        - {x: 46.5, y: 37}
-    - name: spaceShips_003.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_003.png
       rect:
         serializedVersion: 2
         x: 567
@@ -3927,14 +3738,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -50, y: 47}
-        - {x: -50, y: -3}
-        - {x: -31, y: -47}
-        - {x: 21, y: -47}
-        - {x: 50, y: -28}
-        - {x: 50, y: 47}
-    - name: spaceShips_004.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_004.png
       rect:
         serializedVersion: 2
         x: 441
@@ -3944,16 +3752,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -48, y: 54}
-        - {x: -63, y: 39}
-        - {x: -63, y: -43}
-        - {x: -46, y: -54}
-        - {x: 54, y: -54}
-        - {x: 63, y: -34}
-        - {x: 63, y: 33}
-        - {x: 51, y: 54}
-    - name: spaceShips_005.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_005.png
       rect:
         serializedVersion: 2
         x: 344
@@ -3963,13 +3766,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -68, y: 42}
-        - {x: -68, y: -42}
-        - {x: 59, y: -42}
-        - {x: 68, y: -36}
-        - {x: 68, y: 42}
-    - name: spaceShips_006.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_006.png
       rect:
         serializedVersion: 2
         x: 662
@@ -3979,30 +3780,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 19, y: -28}
-        - {x: 19, y: -26}
-        - {x: 19, y: -31}
-        - {x: 16, y: -42}
-        - {x: 8, y: -52}
-        - {x: 12, y: -74}
-        - {x: 44, y: -74}
-        - {x: 47, y: -62}
-        - {x: 47, y: 47}
-        - {x: 24, y: 72}
-        - {x: 16, y: 74}
-        - {x: -16, y: 74}
-        - {x: -18, y: 67}
-        - {x: -18, y: 37}
-        - {x: -46, y: 8}
-        - {x: -47, y: -6}
-        - {x: -47, y: -45}
-        - {x: -24, y: -74}
-        - {x: -15, y: -74}
-        - {x: -9, y: -62}
-        - {x: 3, y: -54}
-        - {x: 16, y: -37}
-    - name: spaceShips_007.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_007.png
       rect:
         serializedVersion: 2
         x: 276
@@ -4012,20 +3794,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -33, y: -53.5}
-        - {x: -20, y: -59.5}
-        - {x: 53, y: -75.5}
-        - {x: 86, y: -75.5}
-        - {x: 86, y: 75.5}
-        - {x: -86, y: 75.5}
-        - {x: -86, y: -75.5}
-        - {x: -52, y: -75.5}
-        - {x: -43, y: -72.5}
-        - {x: -37, y: -49.5}
-        - {x: -37, y: -45.5}
-        - {x: -36, y: -50.5}
-    - name: spaceShips_008.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_008.png
       rect:
         serializedVersion: 2
         x: 562
@@ -4035,19 +3808,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 49, y: -4}
-        - {x: 43, y: 23}
-        - {x: 41, y: 26}
-        - {x: 24, y: 41}
-        - {x: -34, y: 41}
-        - {x: -50, y: 34}
-        - {x: -50, y: -38}
-        - {x: -47, y: -41}
-        - {x: 49, y: -41}
-        - {x: 50, y: -39}
-        - {x: 50, y: -12}
-    - name: spaceShips_009.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceShips_009.png
       rect:
         serializedVersion: 2
         x: 448
@@ -4057,13 +3822,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -57, y: 41}
-        - {x: -57, y: -41}
-        - {x: 57, y: -41}
-        - {x: 57, y: 33}
-        - {x: 42, y: 41}
-    - name: spaceStation_001.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_001.png
       rect:
         serializedVersion: 2
         x: 444
@@ -4073,13 +3836,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -57, y: 20}
-        - {x: -62, y: 15}
-        - {x: -62, y: -20}
-        - {x: 62, y: -20}
-        - {x: 62, y: 20}
-    - name: spaceStation_002.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_002.png
       rect:
         serializedVersion: 2
         x: 874
@@ -4090,7 +3851,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_003.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_003.png
       rect:
         serializedVersion: 2
         x: 702
@@ -4101,7 +3865,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_004.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_004.png
       rect:
         serializedVersion: 2
         x: 814
@@ -4112,7 +3879,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_005.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_005.png
       rect:
         serializedVersion: 2
         x: 917
@@ -4122,15 +3892,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 22}
-        - {x: -21, y: -18}
-        - {x: -17, y: -22}
-        - {x: 15, y: -22}
-        - {x: 21, y: -16}
-        - {x: 21, y: 18}
-        - {x: 20, y: 22}
-    - name: spaceStation_006.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_006.png
       rect:
         serializedVersion: 2
         x: 998
@@ -4140,14 +3906,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 22}
-        - {x: -18, y: -22}
-        - {x: -1, y: -22}
-        - {x: 18, y: -10}
-        - {x: 18, y: 12}
-        - {x: -1, y: 22}
-    - name: spaceStation_007.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_007.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -4157,14 +3920,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 22}
-        - {x: -16, y: -22}
-        - {x: 4, y: -22}
-        - {x: 16, y: -20}
-        - {x: 16, y: 16}
-        - {x: -2, y: 22}
-    - name: spaceStation_008.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_008.png
       rect:
         serializedVersion: 2
         x: 1034
@@ -4174,14 +3934,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 1, y: 22}
-        - {x: -16, y: 22}
-        - {x: -16, y: -22}
-        - {x: 5, y: -22}
-        - {x: 16, y: -18}
-        - {x: 16, y: 17}
-    - name: spaceStation_009.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_009.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -4192,7 +3949,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_010.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_010.png
       rect:
         serializedVersion: 2
         x: 1069
@@ -4203,7 +3963,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_011.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_011.png
       rect:
         serializedVersion: 2
         x: 824
@@ -4213,12 +3976,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24, y: 22}
-        - {x: -24, y: -22}
-        - {x: 24, y: -22}
-        - {x: 24, y: 22}
-    - name: spaceStation_012.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_012.png
       rect:
         serializedVersion: 2
         x: 1032
@@ -4228,14 +3990,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: -16}
-        - {x: 2, y: -22}
-        - {x: 16, y: -22}
-        - {x: 16, y: 22}
-        - {x: -4, y: 22}
-        - {x: -16, y: 20}
-    - name: spaceStation_013.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_013.png
       rect:
         serializedVersion: 2
         x: 758
@@ -4245,14 +4004,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -28, y: 22}
-        - {x: -28, y: -22}
-        - {x: 6, y: -22}
-        - {x: 28, y: -17}
-        - {x: 28, y: 18}
-        - {x: 24, y: 22}
-    - name: spaceStation_014.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_014.png
       rect:
         serializedVersion: 2
         x: 916
@@ -4262,14 +4018,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -9, y: 22}
-        - {x: -21, y: 16}
-        - {x: -21, y: -17}
-        - {x: -11, y: -22}
-        - {x: 21, y: -22}
-        - {x: 21, y: 22}
-    - name: spaceStation_015.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_015.png
       rect:
         serializedVersion: 2
         x: 426
@@ -4279,14 +4032,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -61, y: 22}
-        - {x: -61, y: -22}
-        - {x: 56, y: -22}
-        - {x: 61, y: -15}
-        - {x: 61, y: 12}
-        - {x: 59, y: 22}
-    - name: spaceStation_016.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_016.png
       rect:
         serializedVersion: 2
         x: 919
@@ -4296,12 +4046,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 20}
-        - {x: -20, y: -20}
-        - {x: 20, y: -20}
-        - {x: 20, y: 20}
-    - name: spaceStation_017.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_017.png
       rect:
         serializedVersion: 2
         x: 572
@@ -4311,14 +4060,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -41, y: 22}
-        - {x: -41, y: -22}
-        - {x: 20, y: -22}
-        - {x: 41, y: -16}
-        - {x: 41, y: 18}
-        - {x: 39, y: 22}
-    - name: spaceStation_018.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_018.png
       rect:
         serializedVersion: 2
         x: 0
@@ -4328,22 +4074,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 40, y: -2}
-        - {x: 41, y: 0}
-        - {x: 86, y: 0}
-        - {x: 86, y: 26}
-        - {x: -86, y: 26}
-        - {x: -86, y: 0}
-        - {x: -42, y: 0}
-        - {x: -40, y: 2}
-        - {x: -41, y: 0}
-        - {x: -86, y: 0}
-        - {x: -86, y: -26}
-        - {x: 86, y: -26}
-        - {x: 86, y: 0}
-        - {x: 42, y: 0}
-    - name: spaceStation_019.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_019.png
       rect:
         serializedVersion: 2
         x: 215
@@ -4353,22 +4088,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 40, y: -2}
-        - {x: 41, y: 0}
-        - {x: 86, y: 0}
-        - {x: 86, y: 26}
-        - {x: -86, y: 26}
-        - {x: -86, y: 0}
-        - {x: -42, y: 0}
-        - {x: -40, y: 2}
-        - {x: -41, y: 0}
-        - {x: -86, y: 0}
-        - {x: -86, y: -26}
-        - {x: 86, y: -26}
-        - {x: 86, y: 0}
-        - {x: 42, y: 0}
-    - name: spaceStation_020.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_020.png
       rect:
         serializedVersion: 2
         x: 562
@@ -4378,15 +4102,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -55, y: 173.5}
-        - {x: -62, y: 169.5}
-        - {x: -62, y: 43.5}
-        - {x: -8, y: -173.5}
-        - {x: 10, y: -173.5}
-        - {x: 62, y: 15.5}
-        - {x: 62, y: 173.5}
-    - name: spaceStation_021.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_021.png
       rect:
         serializedVersion: 2
         x: 220
@@ -4396,27 +4116,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 42, y: 30}
-        - {x: 40, y: 28}
-        - {x: 41, y: 30}
-        - {x: 86, y: 30}
-        - {x: 86, y: 79}
-        - {x: 42, y: 142}
-        - {x: 36, y: 144}
-        - {x: -58, y: 144}
-        - {x: -86, y: 100}
-        - {x: -86, y: 30}
-        - {x: -42, y: 30}
-        - {x: -40, y: 32}
-        - {x: -41, y: 30}
-        - {x: -86, y: 30}
-        - {x: -86, y: -88}
-        - {x: -17, y: -144}
-        - {x: 67, y: -144}
-        - {x: 86, y: -98}
-        - {x: 86, y: 30}
-    - name: spaceStation_022.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_022.png
       rect:
         serializedVersion: 2
         x: 215
@@ -4426,16 +4130,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -64, y: 20}
-        - {x: -86, y: 19}
-        - {x: -86, y: -16}
-        - {x: -57, y: -20}
-        - {x: 64, y: -20}
-        - {x: 86, y: -19}
-        - {x: 86, y: 16}
-        - {x: 57, y: 20}
-    - name: spaceStation_023.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_023.png
       rect:
         serializedVersion: 2
         x: 172
@@ -4445,16 +4144,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -64, y: 20}
-        - {x: -86, y: 19}
-        - {x: -86, y: -16}
-        - {x: -57, y: -20}
-        - {x: 64, y: -20}
-        - {x: 86, y: -19}
-        - {x: 86, y: 16}
-        - {x: 57, y: 20}
-    - name: spaceStation_024.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_024.png
       rect:
         serializedVersion: 2
         x: 0
@@ -4464,19 +4158,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 114, y: 200}
-        - {x: -102, y: 200}
-        - {x: -138, y: 181}
-        - {x: -138, y: 47}
-        - {x: -35, y: -92}
-        - {x: -10, y: -200}
-        - {x: 22, y: -200}
-        - {x: 30, y: -197}
-        - {x: 70, y: -90}
-        - {x: 138, y: 58}
-        - {x: 138, y: 177}
-    - name: spaceStation_025.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_025.png
       rect:
         serializedVersion: 2
         x: 1112
@@ -4487,7 +4173,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_026.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_026.png
       rect:
         serializedVersion: 2
         x: 1092
@@ -4498,7 +4187,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_027.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_027.png
       rect:
         serializedVersion: 2
         x: 1093
@@ -4509,7 +4201,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: spaceStation_028.png
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_028.png
       rect:
         serializedVersion: 2
         x: 448
@@ -4519,16 +4214,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29, y: 29}
-        - {x: -62, y: -1}
-        - {x: -62, y: -18}
-        - {x: -33, y: -29}
-        - {x: 28, y: -29}
-        - {x: 62, y: -19}
-        - {x: 62, y: -1}
-        - {x: 34, y: 29}
-    - name: spaceStation_029.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_029.png
       rect:
         serializedVersion: 2
         x: 568
@@ -4538,14 +4228,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -42, y: 18}
-        - {x: -42, y: -18}
-        - {x: 37, y: -18}
-        - {x: 42, y: -14}
-        - {x: 42, y: 15}
-        - {x: 35, y: 18}
-    - name: spaceStation_030.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_030.png
       rect:
         serializedVersion: 2
         x: 230
@@ -4555,14 +4242,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25, y: 17}
-        - {x: -26, y: 13}
-        - {x: -26, y: -12}
-        - {x: -24, y: -17}
-        - {x: 26, y: -17}
-        - {x: 26, y: 17}
-    - name: spaceStation_031.png
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spaceStation_031.png
       rect:
         serializedVersion: 2
         x: 758
@@ -4572,16 +4256,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -24, y: 19}
-        - {x: -30, y: 13}
-        - {x: -30, y: -12}
-        - {x: -24, y: -19}
-        - {x: 24, y: -19}
-        - {x: 30, y: -12}
-        - {x: 30, y: 14}
-        - {x: 28, y: 19}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

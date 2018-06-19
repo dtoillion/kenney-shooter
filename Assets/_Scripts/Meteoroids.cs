@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Asteroids : MonoBehaviour {
+public class Meteoroids : MonoBehaviour {
 
-	public GameObject[] asteroids;
+	public GameObject[] meteoroids;
 	public float spawnRateA = 9f;
 	public float spawnRateB = 15f;
 	public float startDelay = 1f;
@@ -29,7 +29,7 @@ public class Asteroids : MonoBehaviour {
 			for (int i = 0; i < 1; i++)
 			{
 				originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-				Instantiate(asteroids[Random.Range(0, asteroids.Length)], originPosition, Quaternion.identity);
+				Instantiate(meteoroids[Random.Range(0, meteoroids.Length)], originPosition, Quaternion.identity);
 			  yield return new WaitForSeconds (Random.Range(spawnRateA, spawnRateB));
 			}
 		}
