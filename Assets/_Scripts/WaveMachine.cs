@@ -58,11 +58,11 @@ public class WaveMachine : MonoBehaviour {
 			// 		yield return new WaitForSeconds (spawnRate);
 			// 	}
 			// }
-			// yield return new WaitForSeconds (timeBetweenWaves);
-			// while (GameControl.control.BossPresent)
-			// {
-			// 	yield return null;
-			// }
+			yield return new WaitForSeconds (timeBetweenWaves);
+			while (GameControl.control.BossPresent)
+			{
+				yield return null;
+			}
 			GameControl.control.CurrentLevel += 1;
 			BGSwitcher.control.UpdateBackground();
 			PlayerUpgrades.control.LevelUp();
