@@ -31,8 +31,10 @@ public class PlayerController : MonoBehaviour {
 
 	private void FixedUpdate ()
 	{
-		if(((XInputValue != 0) || (YInputValue != 0)) && !(crash))
-			MoveShip ();
+    if((YInputValue != 0) && !(crash))
+      MoveShip ();
+		if((XInputValue != 0) && !(crash))
+			StrafeShip ();
     if(Input.GetKey("escape"))
       GameControl.control.PauseGame();
 	}
@@ -88,10 +90,13 @@ public class PlayerController : MonoBehaviour {
 		crash = false;
 	}
 
-	private void MoveShip ()
-	{
-		rb.AddForce(transform.right * YInputValue * GameControl.control.Speed);
-		rb.AddForce(transform.up * XInputValue * GameControl.control.Speed);
+  private void MoveShip () {
+		rb.AddForce(transform.up * -YInputValue * GameControl.control.Speed);
+  }
+
+  private void StrafeShip ()
+  {
+    rb.AddForce(transform.right * XInputValue * GameControl.control.Speed);
 	}
 
 }
