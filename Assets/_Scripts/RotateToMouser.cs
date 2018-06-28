@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateToMouser : MonoBehaviour {
 
-  void FixedUpdate ()
+  void Update ()
   {
     RotateToMouse ();
   }
