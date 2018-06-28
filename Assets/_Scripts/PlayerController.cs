@@ -5,8 +5,8 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject ExplosionPrefab;
 	public GameObject ImpactPrefab;
-	private float YInputValue;
 	private float XInputValue;
+  private float YInputValue;
 	private Rigidbody2D rb;
 	private bool crash;
 
@@ -18,14 +18,14 @@ public class PlayerController : MonoBehaviour {
 
 	private void Update ()
 	{
+    XInputValue = Input.GetAxis("Horizontal");
 		YInputValue = Input.GetAxis("Vertical");
-		XInputValue = Input.GetAxis("Horizontal");
 
 		if(GameControl.control.health <= 0)
 		{
 			Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 			ExplosionPrefab.transform.parent = null;
-			gameObject.SetActive(false);
+      gameObject.SetActive(false);
 		}
 	}
 
@@ -48,28 +48,6 @@ public class PlayerController : MonoBehaviour {
       PlayerUpgrades.control.ResetShield();
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
-
-    if (trig.gameObject.tag == "SpeedPickUp")
-    {
-      PlayerUpgrades.control.SpeedBoost();
-    }
-
-    if (trig.gameObject.tag == "FireRatePickUp")
-    {
-      PlayerUpgrades.control.FireRateBoost();
-    }
-
-    if (trig.gameObject.tag == "AmmoPickUp")
-    {
-      GameControl.control.ammo += 100f;
-      GameControl.control.CurrentWeaponInt = (Random.Range(0, 29));
-    }
-
-    if (trig.gameObject.tag == "ShieldPickUp")
-    {
-      PlayerUpgrades.control.ShieldBoost();
-    }
-
   }
 
 	void OnCollisionEnter2D(Collision2D collision)
