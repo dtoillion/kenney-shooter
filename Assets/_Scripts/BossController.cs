@@ -23,10 +23,10 @@ public class BossController : MonoBehaviour {
         GameControl.control.kills += 1f;
         Instantiate(ExplosionPrefab, transform.position, transform.rotation);
         ExplosionPrefab.transform.parent = null;
-        for (int i = 0; i < 3; i++)
-        {
-          Instantiate(Pickups[Random.Range(0, Pickups.Length)], transform.position, Quaternion.identity);
-        }
+        // for (int i = 0; i < 3; i++)
+        // {
+        //   Instantiate(Pickups[Random.Range(0, Pickups.Length)], transform.position, Quaternion.identity);
+        // }
         Destroy(gameObject, 0);
       }
     }

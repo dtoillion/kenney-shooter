@@ -14,6 +14,13 @@ public class MainMenu : MonoBehaviour {
   public void StartSurvivalMode()
   {
     loadingScreenPrefab.SetActive(true);
-    SceneManager.LoadScene("Level001");
+    SceneManager.LoadScene("Survival");
   }
+
+  public void StartCampaignMode()
+  {
+    loadingScreenPrefab.SetActive(true);
+    SceneManager.LoadScene("Campaign");
+  }
+
 }

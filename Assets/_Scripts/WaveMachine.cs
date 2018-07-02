@@ -37,27 +37,27 @@ public class WaveMachine : MonoBehaviour {
 				Instantiate(enemies[Random.Range(0, enemies.Length)], originPosition, transform.rotation);
 				yield return new WaitForSeconds (spawnRate);
 			}
-			// yield return new WaitForSeconds (timeBetweenWaves);
-			// if(true)
-			// {
-			// 	for (int i = 1; i < (Random.Range(1, (GameControl.control.CurrentLevel))); i++)
-			// 	{
-			// 		originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-			// 		Instantiate(enemies2[Random.Range(0, enemies2.Length)], originPosition, transform.rotation);
-			// 		yield return new WaitForSeconds (spawnRate);
-			// 	}
-			// }
-			// yield return new WaitForSeconds (timeBetweenWaves);
-			// if(true)
-			// {
-			// 	for (int i = 1; i < 2; i++)
-			// 	{
-			// 		GameControl.control.BossPresent = true;
-			// 		originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
-			// 		Instantiate(bosses[Random.Range(0, bosses.Length)], originPosition, transform.rotation);
-			// 		yield return new WaitForSeconds (spawnRate);
-			// 	}
-			// }
+			yield return new WaitForSeconds (timeBetweenWaves);
+			if(true)
+			{
+				for (int i = 1; i < (Random.Range(1, (GameControl.control.CurrentLevel))); i++)
+				{
+					originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
+					Instantiate(enemies2[Random.Range(0, enemies2.Length)], originPosition, transform.rotation);
+					yield return new WaitForSeconds (spawnRate);
+				}
+			}
+			yield return new WaitForSeconds (timeBetweenWaves);
+			if(true)
+			{
+				for (int i = 1; i < 2; i++)
+				{
+					GameControl.control.BossPresent = true;
+					originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
+					Instantiate(bosses[Random.Range(0, bosses.Length)], originPosition, transform.rotation);
+					yield return new WaitForSeconds (spawnRate);
+				}
+			}
 			yield return new WaitForSeconds (timeBetweenWaves);
 			while (GameControl.control.BossPresent)
 			{
