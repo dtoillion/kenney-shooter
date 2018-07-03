@@ -52,14 +52,11 @@ public class GameControl : MonoBehaviour {
 
 	public void CheckBoss ()
 	{
-		if(GameObject.FindGameObjectsWithTag("Boss").Length >= 1)
+		if(GameObject.FindGameObjectsWithTag("Boss").Length == 0)
 		{
-			Debug.Log("boss detected");
+			BossPresent = true;
 		} else {
-			if(BossPresent)
-			  BossPresent = false;
-			else
-			  BossPresent = true;
+			BossPresent = false;
 		}
 	}
 
