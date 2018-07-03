@@ -17,7 +17,6 @@ public class BossController : MonoBehaviour {
 
       if(health <= 0) {
         GameControl.control.score += scoreValue;
-        GameControl.control.kills += 1f;
         Instantiate(ExplosionPrefab, transform.position, transform.rotation);
         ExplosionPrefab.transform.parent = null;
         Destroy(gameObject, 0);

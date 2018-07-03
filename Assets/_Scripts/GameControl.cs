@@ -15,7 +15,6 @@ public class GameControl : MonoBehaviour {
 	public GameObject GameWinCanvas;
 	public GameObject PlayerShip;
 	public float score;
-	public float kills;
 	public float health;
 	public float Speed;
 	public float CurrentFireRate;
@@ -23,11 +22,6 @@ public class GameControl : MonoBehaviour {
 	public float CurrentLevel = 1;
 	public int CurrentWeaponInt = 0;
 	public Text scoreHUD;
-	public Text currentweaponHUD;
-	public Text killsHUD;
-	public Text healthHUD;
-	public Text speedHUD;
-	public Text firerateHUD;
 	public Text ammoHUD;
 	public Text currentlevelHUD;
 
@@ -35,12 +29,7 @@ public class GameControl : MonoBehaviour {
 
 	void Update ()
 	{
-		currentweaponHUD.text = ("Weapon: " + GameControl.control.CurrentWeaponInt.ToString ("n0"));
-		healthHUD.text = ("Health: " + GameControl.control.health.ToString ("n0"));
-		scoreHUD.text = GameControl.control.score.ToString ("n0");
-		killsHUD.text = ("Kills: " + GameControl.control.kills.ToString ("n0"));
-		speedHUD.text = ("Speed: " + GameControl.control.Speed.ToString ("n0"));
-		firerateHUD.text = ("Rate:" + GameControl.control.CurrentFireRate.ToString ("F"));
+		scoreHUD.text = ("Score: " + GameControl.control.score.ToString ("n0"));
 		ammoHUD.text = ("Ammo: " + GameControl.control.ammo.ToString ("n0"));
 		currentlevelHUD.text = ("Wave " + CurrentLevel);
 	}
@@ -54,9 +43,9 @@ public class GameControl : MonoBehaviour {
 	{
 		if(GameObject.FindGameObjectsWithTag("Boss").Length == 0)
 		{
-			BossPresent = true;
-		} else {
 			BossPresent = false;
+		} else {
+			BossPresent = true;
 		}
 	}
 
@@ -89,7 +78,7 @@ public class GameControl : MonoBehaviour {
 	public void ResetGame ()
 	{
 		Time.timeScale = 1;
-		SceneManager.LoadScene("Level001");
+		SceneManager.LoadScene("Survival");
 	}
 
 }

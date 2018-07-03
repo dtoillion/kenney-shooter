@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour {
 
 	void Start ()
 	{
-		SetupEnemy();
+   SetupEnemy();
 	}
 
 	void SetupEnemy ()
@@ -22,11 +22,9 @@ public class EnemyController : MonoBehaviour {
     {
     	health -= 1;
     	Instantiate(ImpactPrefab, transform.position, transform.rotation);
-    	if(trig.gameObject.tag == "Projectile")
-    		Destroy(trig.gameObject, 0);
+    	Destroy(trig.gameObject, 0);
     	if(health <= 0) {
-        GameControl.control.kills += 1f;
-        GameControl.control.score += (100 + GameControl.control.CurrentLevel * GameControl.control.kills);
+        GameControl.control.score += (100 + GameControl.control.CurrentLevel);
 				Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 				ExplosionPrefab.transform.parent = null;
 				Destroy(gameObject, 0.1f);

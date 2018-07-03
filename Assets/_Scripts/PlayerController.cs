@@ -42,10 +42,8 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D trig) {
     if (trig.gameObject.tag == "EnemyLaser")
     {
+      GameControl.control.health -=1;
      	Destroy(trig.gameObject, 0);
-      if(!PlayerUpgrades.control.Shielded)
-     	  GameControl.control.health -= 1f;
-      PlayerUpgrades.control.ResetShield();
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
   }
@@ -56,9 +54,6 @@ public class PlayerController : MonoBehaviour {
 		{
 			crash = true;
 			Invoke("Crashed", 0.7f);
-      if(!PlayerUpgrades.control.Shielded)
-			  GameControl.control.health -= 1f;
-      PlayerUpgrades.control.ResetShield();
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
 		}
 	}
