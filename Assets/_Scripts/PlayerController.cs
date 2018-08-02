@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour {
     if((YInputValue != 0) && !(crash))
       MoveShip ();
 		if((XInputValue != 0) && !(crash))
-			StrafeShip ();
+      RotateShip ();
+			// StrafeShip ();
     if(Input.GetKey("escape"))
       GameControl.control.PauseGame();
 	}
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D trig) {
     if (trig.gameObject.tag == "EnemyLaser")
     {
-      GameControl.control.health -=1;
+      GameControl.control.health -= 1;
      	Destroy(trig.gameObject, 0);
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
     }
@@ -70,6 +71,11 @@ public class PlayerController : MonoBehaviour {
   private void StrafeShip ()
   {
     rb.AddForce(transform.right * XInputValue * GameControl.control.Speed);
+  }
+
+  private void RotateShip ()
+  {
+    rb.AddTorque(-XInputValue * GameControl.control.Speed);
 	}
 
 }
