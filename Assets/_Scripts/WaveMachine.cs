@@ -27,7 +27,7 @@ public class WaveMachine : MonoBehaviour {
 		yield return new WaitForSeconds (startDelay);
 		while (true)
 		{
-			for (int i = 1; i < (2 * GameControl.control.CurrentLevel); i++)
+			for (int i = 1; i < (3 * GameControl.control.CurrentLevel); i++)
 			{
 				originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
 				Instantiate(enemies[Random.Range(0, enemies.Length)], originPosition, transform.rotation);
