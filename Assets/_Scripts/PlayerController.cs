@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public GameObject ExplosionPrefab;
-	public GameObject ImpactPrefab;
+  public GameObject ImpactPrefab;
+	public ParticleSystem Thruster;
 	private float XInputValue;
   private float YInputValue;
 	private Rigidbody2D rb;
@@ -33,6 +34,9 @@ public class PlayerController : MonoBehaviour {
 	{
     if((YInputValue != 0) && !(crash))
       MoveShip ();
+      Thruster.Play();
+    if(YInputValue ==0)
+      Thruster.Stop();
 		if((XInputValue != 0) && !(crash))
       RotateShip ();
 			// StrafeShip ();
@@ -51,7 +55,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		if ((collision.gameObject.tag == "Target") || (collision.gameObject.tag == "Boss") && !(crash))
+		if ((collision.gameObject.tag == "Enemy") || (collision.gameObject.tag == "Boss")|| (collision.gameObject.tag == "Meteor") && !(crash))
 		{
 			crash = true;
 			Invoke("Crashed", 0.7f);

@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour {
 
   private void FixedUpdate ()
   {
-    if(Input.GetButton("Fire4") && GameControl.control.ammo >=1 && Time.time > nextFire)
+    if(Input.GetButton("Fire1") && GameControl.control.ammo >=1 && Time.time > nextFire)
     {
       CurrentWeaponInt = GameControl.control.CurrentWeaponInt;
       CurrentFireRate = GameControl.control.CurrentFireRate;

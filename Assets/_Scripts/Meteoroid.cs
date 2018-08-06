@@ -30,7 +30,7 @@ public class Meteoroid : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D trig)
   {
-    if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser"))
+    if ((trig.gameObject.tag == "Projectile") || (trig.gameObject.tag == "EnemyLaser") || (trig.gameObject.tag == "Enemy"))
     {
       health--;
       Instantiate(MeteorExplosion, transform.position, transform.rotation);
