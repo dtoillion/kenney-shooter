@@ -18,6 +18,7 @@ public class WaveMachine : MonoBehaviour {
 
 	void Start ()
 	{
+		GameControl.control.currentlevelHUD.text = ("Wave " + GameControl.control.CurrentLevel);
 		originPosition = new Vector3((Random.Range(minX, maxX)), (Random.Range(minY, maxY)), (Random.Range(minZ, maxZ)));
 		StartCoroutine (Spawn());
 	}
@@ -25,7 +26,7 @@ public class WaveMachine : MonoBehaviour {
 	IEnumerator Spawn()
 	{
 		yield return new WaitForSeconds (startDelay);
-		while (GameControl.control.CurrentLevel <= 3)
+		while (GameControl.control.CurrentLevel <= 2)
 		{
 			for (int i = 1; i < (3 * GameControl.control.CurrentLevel); i++)
 			{
@@ -50,6 +51,7 @@ public class WaveMachine : MonoBehaviour {
 			}
 
 			GameControl.control.CurrentLevel += 1;
+			GameControl.control.currentlevelHUD.text = ("Wave " + GameControl.control.CurrentLevel);
 		}
 		GameControl.control.GameWin();
 	}

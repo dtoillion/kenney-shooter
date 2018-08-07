@@ -27,12 +27,6 @@ public class GameControl : MonoBehaviour {
 
 	private bool Paused = false;
 
-	void Update ()
-	{
-		scoreHUD.text = ("Score: " + GameControl.control.score.ToString ("n0"));
-		ammoHUD.text = ("Ammo: " + GameControl.control.ammo.ToString ("n0"));
-		currentlevelHUD.text = ("Wave " + CurrentLevel);
-	}
 
 	void Awake ()
 	{
@@ -41,6 +35,13 @@ public class GameControl : MonoBehaviour {
 		else if (control != this)
 		  Destroy(gameObject);
 		DontDestroyOnLoad(gameObject);
+		Instantiate(PlayerShip, new Vector3(0, 0, 0), transform.rotation);
+	}
+
+	void Update ()
+	{
+		scoreHUD.text = ("Score: " + GameControl.control.score.ToString ("n0"));
+		ammoHUD.text = ("Ammo: " + GameControl.control.ammo.ToString ("n0"));
 	}
 
 	public void CheckBoss ()
@@ -70,19 +71,18 @@ public class GameControl : MonoBehaviour {
 	public void GameOver ()
 	{
 		GameOverCanvas.SetActive(true);
-		Time.timeScale = 0;
+		GameControl.control.PauseGame();
 	}
 
 	public void GameWin ()
 	{
 		GameWinCanvas.SetActive(true);
 		currentlevelHUD.text = ("You Win!");
-		Time.timeScale = 0;
 	}
 
 	public void ResetGame ()
 	{
-		Time.timeScale = 1;
+		GameControl.control.PauseGame();
 		SceneManager.LoadScene("Survival");
 	}
 
