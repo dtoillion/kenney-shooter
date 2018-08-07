@@ -36,7 +36,11 @@ public class GameControl : MonoBehaviour {
 
 	void Awake ()
 	{
-		control = this;
+		if (control == null)
+		  control = this;
+		else if (control != this)
+		  Destroy(gameObject);
+		DontDestroyOnLoad(gameObject);
 	}
 
 	public void CheckBoss ()
@@ -72,6 +76,7 @@ public class GameControl : MonoBehaviour {
 	public void GameWin ()
 	{
 		GameWinCanvas.SetActive(true);
+		currentlevelHUD.text = ("You Win!");
 		Time.timeScale = 0;
 	}
 

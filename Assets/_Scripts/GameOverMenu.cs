@@ -14,6 +14,10 @@ public class GameOverMenu : MonoBehaviour {
     GameControl.control.ResetGame();
   }
 
+  public void RTB () {
+    SceneManager.LoadScene("HomeBase");
+  }
+
   public void PauseGame ()
   {
     GameControl.control.PauseGame();
