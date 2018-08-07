@@ -5,6 +5,7 @@ public class BossController : MonoBehaviour {
 
   public float health = 3f;
   public float scoreValue = 100f;
+
   public GameObject ImpactPrefab;
   public GameObject ExplosionPrefab;
 

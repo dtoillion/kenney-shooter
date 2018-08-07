@@ -50,7 +50,6 @@ public class WaveMachine : MonoBehaviour {
 			}
 
 			GameControl.control.CurrentLevel += 1;
-			BGSwitcher.control.UpdateBackground();
 		}
 	}
 
