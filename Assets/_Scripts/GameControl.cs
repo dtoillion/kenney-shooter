@@ -34,6 +34,7 @@ public class GameControl : MonoBehaviour {
 		  control = this;
 		else if (control != this)
 		  Destroy(gameObject);
+
 		DontDestroyOnLoad(gameObject);
 		Instantiate(PlayerShip, new Vector3(0, 0, 0), transform.rotation);
 	}

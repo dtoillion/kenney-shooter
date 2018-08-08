@@ -5,7 +5,12 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject ExplosionPrefab;
   public GameObject ImpactPrefab;
-	public ParticleSystem Thruster;
+
+  public ParticleSystem FrontThruster;
+  public ParticleSystem RearThruster;
+  public ParticleSystem LeftThruster;
+  public ParticleSystem RightThruster;
+
 	private float XInputValue;
   private float YInputValue;
 	private Rigidbody2D rb;
@@ -34,12 +39,10 @@ public class PlayerController : MonoBehaviour {
 	{
     if((YInputValue != 0) && !(crash))
       MoveShip ();
-      Thruster.Play();
-    if(YInputValue ==0)
-      Thruster.Stop();
-		if((XInputValue != 0) && !(crash))
+
+    if((XInputValue != 0) && !(crash))
       RotateShip ();
-			// StrafeShip ();
+
     if(Input.GetKey("escape"))
       GameControl.control.PauseGame();
 	}
@@ -58,7 +61,7 @@ public class PlayerController : MonoBehaviour {
 		if ((collision.gameObject.tag == "Enemy") || (collision.gameObject.tag == "Boss")|| (collision.gameObject.tag == "Meteor") && !(crash))
 		{
 			crash = true;
-			Invoke("Crashed", 0.7f);
+			Invoke("Crashed", 0.5f);
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);
 		}
 	}
@@ -70,16 +73,27 @@ public class PlayerController : MonoBehaviour {
 
   private void MoveShip () {
 		rb.AddForce(transform.up * -YInputValue * GameControl.control.Speed);
-  }
-
-  private void StrafeShip ()
-  {
-    rb.AddForce(transform.right * XInputValue * GameControl.control.Speed);
+    if(YInputValue == -1) {
+      RearThruster.Play();
+    } else if(YInputValue == 1) {
+      FrontThruster.Play();
+    } else {
+      FrontThruster.Stop();
+      RearThruster.Stop();
+    }
   }
 
   private void RotateShip ()
   {
     rb.AddTorque(-XInputValue * GameControl.control.Speed);
+    if(XInputValue == -1) {
+      RightThruster.Play();
+    } else if(XInputValue == 1) {
+      LeftThruster.Play();
+    } else {
+      LeftThruster.Stop();
+      RightThruster.Stop();
+    }
 	}
 
 }
