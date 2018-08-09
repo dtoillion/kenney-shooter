@@ -72,7 +72,6 @@ public class GameControl : MonoBehaviour {
 	public void GameOver ()
 	{
 		GameOverCanvas.SetActive(true);
-		GameControl.control.PauseGame();
 	}
 
 	public void GameWin ()

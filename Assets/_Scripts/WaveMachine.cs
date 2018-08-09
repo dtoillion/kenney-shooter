@@ -26,7 +26,7 @@ public class WaveMachine : MonoBehaviour {
 	IEnumerator Spawn()
 	{
 		yield return new WaitForSeconds (startDelay);
-		while (GameControl.control.CurrentLevel <= 2)
+		while (true)
 		{
 			for (int i = 1; i < (3 * GameControl.control.CurrentLevel); i++)
 			{
