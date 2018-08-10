@@ -35,7 +35,7 @@ public class GameControl : MonoBehaviour {
 		else if (control != this)
 		  Destroy(gameObject);
 
-		DontDestroyOnLoad(gameObject);
+		// DontDestroyOnLoad(gameObject);
 		Instantiate(PlayerShip, new Vector3(0, 0, 0), transform.rotation);
 	}
 
@@ -82,7 +82,6 @@ public class GameControl : MonoBehaviour {
 
 	public void ResetGame ()
 	{
-		GameControl.control.PauseGame();
 		SceneManager.LoadScene("Survival");
 	}
 

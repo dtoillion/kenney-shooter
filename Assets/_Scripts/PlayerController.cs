@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		if ((collision.gameObject.tag == "Enemy") || (collision.gameObject.tag == "Boss")|| (collision.gameObject.tag == "Meteor") && !(crash))
 		{
+      GameControl.control.health -= 1;
 			crash = true;
 			Invoke("Crashed", 0.5f);
 			Instantiate(ImpactPrefab, transform.position, transform.rotation);

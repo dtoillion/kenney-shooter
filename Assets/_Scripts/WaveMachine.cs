@@ -53,7 +53,7 @@ public class WaveMachine : MonoBehaviour {
 			GameControl.control.CurrentLevel += 1;
 			GameControl.control.currentlevelHUD.text = ("Wave " + GameControl.control.CurrentLevel);
 		}
-		GameControl.control.GameWin();
+		// GameControl.control.GameWin();
 	}
 
 }

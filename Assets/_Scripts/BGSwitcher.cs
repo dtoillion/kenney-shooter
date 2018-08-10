@@ -15,7 +15,10 @@ public class BGSwitcher : MonoBehaviour {
 
   void Start ()
   {
+    // based on level
     // bgImages[CurrentLevelInt].SetActive(true);
+
+    // randomly assigned
     bgImages[Random.Range(0, bgImages.Length)].SetActive(true);
   }
 
