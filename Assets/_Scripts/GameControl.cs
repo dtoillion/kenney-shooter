@@ -10,6 +10,7 @@ public class GameControl : MonoBehaviour {
 
 	public static GameControl control;
 	public bool BossPresent = true;
+	public bool SpawnPlayer = true;
 	public GameObject GamePauseCanvas;
 	public GameObject GameOverCanvas;
 	public GameObject GameWinCanvas;
@@ -36,7 +37,8 @@ public class GameControl : MonoBehaviour {
 		  Destroy(gameObject);
 
 		// DontDestroyOnLoad(gameObject);
-		Instantiate(PlayerShip, new Vector3(0, 0, 0), transform.rotation);
+		if(SpawnPlayer)
+		  Instantiate(PlayerShip, new Vector3(0, 0, 0), transform.rotation);
 	}
 
 	void Update ()
